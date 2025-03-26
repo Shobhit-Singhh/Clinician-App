@@ -9,7 +9,7 @@ export default {
       // Custom breakpoints based on modern device sizes
       
       
-      // Color palette based on the HealthSphere design
+
       colors: {
         primary: {
           DEFAULT: '#1754C3',   // Orange from CTA buttons

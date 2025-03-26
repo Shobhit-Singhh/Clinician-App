@@ -1,6 +1,7 @@
 const Assessment = () => {
-    return <></>; // Placeholder
-  };
-  
-  export default Assessment;
-  
+  return <>
+    <h1>Assessment</h1>
+  </>;
+};
+
+export default Assessment;

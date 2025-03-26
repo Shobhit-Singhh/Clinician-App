@@ -1,6 +1,7 @@
 const Settings = () => {
-    return <></>; // Placeholder
-  };
-  
-  export default Settings;
-  
+  return <>
+    <h1>Settings</h1>
+  </>;
+};
+
+export default Settings;

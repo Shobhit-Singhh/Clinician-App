@@ -84,16 +84,13 @@ const Reports = ({ patientId }) => {
         if (!patient?.reports?.diagnosis?.mentalHealthDisorders) return null;
 
         return (
-            <div className="space-y-4 ">
+            <div className="space-y-4">
                 {patient.reports.diagnosis.mentalHealthDisorders.map((disorder, index) => (
                     <div
                         key={index}
-                        className="max-h-[400px] overflow-y-auto border rounded-lg px-2 py-4 bg-white shadow-sm"
+                        className="max-h-[500px] overflow-y-auto border rounded-lg px-2 py-4 "
                     >
-                        <div
-                            className="flex justify-between items-center cursor-pointer"
-                            onClick={() => toggleSection(`disorder_${index}`)}
-                        >
+                        <div className="flex justify-between items-center cursor-pointer" onClick={() => toggleSection(`disorder_${index}`)} >
                             <div className="flex items-center space-x-2">
                                 {openSections[`disorder_${index}`] ?
                                     <ChevronDown size={16} /> :
@@ -126,7 +123,7 @@ const Reports = ({ patientId }) => {
                         </div>
 
                         {openSections[`disorder_${index}`] && (
-                            <div className="mt-4 p-4 bg-white rounded-lg shadow-md">
+                            <div className="my-4 p-4  rounded-lg">
                                 {/* Basic Disorder Information */}
                                 <div className=" grid grid-cols-2 gap-4 mb-4">
                                     <div>
@@ -218,10 +215,10 @@ const Reports = ({ patientId }) => {
                                             {disorder.assessmentLog.map((log, logIndex) => (
                                                 <div
                                                     key={logIndex}
-                                                    className="bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200"
+                                                    className=" px-4 py-2 rounded-lg shadow-sm border border-gray-200"
                                                 >
                                                     {/* Log Header */}
-                                                    <div className="bg-white">
+                                                    <div className="">
                                                         <div className="flex justify-between items-center ">
                                                             <p className="text-gray-700 mt-1">{log.interpretation}</p>
                                                             <div className="flex space-x-2">
@@ -292,7 +289,7 @@ const Reports = ({ patientId }) => {
                 {Object.entries(patient.reports.medicalHistory).map(([historyType, historyData]) => (
                     <div
                         key={historyType}
-                        className="border rounded-lg p-4 bg-white shadow-sm"
+                        className="border rounded-lg p-4  shadow-sm"
                     >
                         <div
                             className="flex items-center cursor-pointer"
@@ -338,7 +335,7 @@ const Reports = ({ patientId }) => {
                 {Object.entries(patient.reports.miscellaneous).map(([infoType, infoData]) => (
                     <div
                         key={infoType}
-                        className="border rounded-lg p-4 bg-white shadow-sm"
+                        className="border rounded-lg p-4  shadow-sm"
                     >
                         <div
                             className="flex items-center cursor-pointer"
@@ -378,8 +375,8 @@ const Reports = ({ patientId }) => {
     }
 
     return (
-        <div className="rounded-lg h-full p-4">
-            <div className="bg-white rounded-lg shadow-sm">
+        <div className="rounded-lg h-[400px]">
+            <div className=" rounded-lg p-2">
                 <div className="border-b flex">
                     <button
                         className={`
@@ -422,7 +419,7 @@ const Reports = ({ patientId }) => {
                     </button>
                 </div>
 
-                <div className="flex flex-col space-y-4 overflow-y-auto max-h-[600px] p-4">
+                <div className="flex flex-col space-y-4 overflow-y-auto max-h-[390px] p-4">
 
                     {activeTab === 'diagnosis' && renderDiagnosisTab()}
                     {activeTab === 'medicalHistory' && renderMedicalHistoryTab()}

@@ -70,7 +70,7 @@ const LeftNavBar = ({ isCollapsed, onToggleCollapse }) => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className={`
-              w-full flex items-center p-3 px-6 my-4
+              w-full flex items-center p-3 p-6
               ${location.pathname === item.path
                 ? 'bg-primary text-white'
                 : 'hover:bg-neutral-800 text-neutral-400'}

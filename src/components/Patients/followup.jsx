@@ -89,7 +89,7 @@ const Followup = ({ patientId }) => {
     }
 
     return (
-        <div className="rounded-lg h-full p-4 flex flex-col ">
+        <div className="rounded-lg h-full p-2 flex flex-col ">
             <div className="flex justify-between items-center mb-4 border-b pb-2">
                 <h3 className="text-sm font-semibold text-gray-700">Follow-up Assessments</h3>
                 <button 

@@ -8,7 +8,7 @@ const MainLayout = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(false);
 
     return (
-        <div className="flex flex-col min-h-screen bg-neutral-50">
+        <div className="flex flex-col h-full bg-neutral-50">
             <LeftNavBar
                 isCollapsed={isNavCollapsed}
                 onToggleCollapse={() => setIsNavCollapsed(!isNavCollapsed)}
@@ -23,7 +23,7 @@ const MainLayout = () => {
                         ? 'ml-20' // When collapsed
                         : 'ml-64'  // When expanded
                     } 
-                    mt-16 p-6
+                    mt-16
                 `}
             >
                 <Outlet />

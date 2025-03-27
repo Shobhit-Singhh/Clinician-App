@@ -119,8 +119,8 @@ const KPI = ({ patientId }) => {
     const availableResults = Object.entries(patient.laboratoryResults || {});
 
     return (
-        <div className="rounded-lg h-full ">
-            <div className="flex space-x-4 p-4 h-full overflow-x-auto">
+        <div className="rounded-lg h-full">
+            <div className="flex space-x-4 p-2 h-full overflow-x-auto">
                 {/* Appointments Card */}
                 <KPICard title="Appointments" icon={Calendar} color="blue">
                     {patient.lastVisitDate && (
@@ -198,7 +198,7 @@ const KPI = ({ patientId }) => {
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                <div className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-white rounded-lg p-6 w-80 shadow-lg">
                         <div className="flex justify-between items-center mb-4">
                             <h2 className="text-sm font-bold text-gray-700">Add Lab Result</h2>

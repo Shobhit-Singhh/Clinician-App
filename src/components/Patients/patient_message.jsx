@@ -11,7 +11,7 @@ const PatientMessage = ({ patientId }) => {
         if (patientId) {
             const foundPatient = patientsData.patients.find(p => p.id === patientId);
             setPatient(foundPatient);
-            
+
             // Check if patient has messages, if not, initialize with an empty array
             setMessages(foundPatient.messages || []);
         }
@@ -29,7 +29,7 @@ const PatientMessage = ({ patientId }) => {
 
         const updatedMessages = [...messages, message];
         setMessages(updatedMessages);
-        
+
         // In a real application, you'd update the JSON file here
         // For this example, we'll just update the local state
     };
@@ -43,8 +43,8 @@ const PatientMessage = ({ patientId }) => {
     }
 
     return (
-        <div className=" rounded-lg shadow-sm h-full flex flex-col p-2">
-            <div className="flex justify-between items-center mb-4 border-b pb-2">
+        <div className=" rounded-lg h-full flex flex-col pt-6 p-2">
+            <div className="flex justify-between items-center mb-4 border-b">
                 <h3 className="text-sm font-semibold text-gray-700">
                     Chat with {patient.name}
                 </h3>
@@ -52,42 +52,46 @@ const PatientMessage = ({ patientId }) => {
 
             <div className="flex-grow overflow-y-auto space-y-3 pr-2">
                 {messages.map((msg) => (
-                    <div 
-                        key={msg.id} 
-                        className={`flex items-start ${
-                            msg.sender === 'doctor' 
-                                ? 'justify-end' 
-                                : 'justify-start'
-                        }`}
+                    <div
+                        key={msg.id}
+                        className={`flex items-start ${msg.sender === 'doctor'
+                            ? 'justify-end'
+                            : 'justify-start'
+                            }`}
                     >
-                        <div 
+                        {msg.sender === 'doctor' ? (<>  </>
+                        ) : (
+                            <>
+                                <img
+                                    src={patient.image}
+                                    alt={patient.name}
+                                    className="w-8 h-8 rounded-full gap-2 object-cover"
+                                />
+                                <div className='p-1'> </div>
+                            </>
+
+                        )}
+                        <div
                             className={`
-                                max-w-[70%] p-2 rounded-lg text-sm 
-                                ${msg.sender === 'doctor' 
-                                    ? 'bg-blue-500 text-white' 
+                                max-w-[100%] pt-3 px-3 pb-1  rounded-lg text-sm 
+                                ${msg.sender === 'doctor'
+                                    ? 'bg-blue-500 text-white'
                                     : 'bg-gray-200 text-gray-800'
                                 }
                             `}
                         >
                             {msg.text}
                             <div className="text-xs mt-1 opacity-70 text-right">
-                                {new Date(msg.timestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                                {new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                             </div>
                         </div>
-                        {msg.sender === 'doctor' ? (<>  </>
-                        ) : (
-                            <img
-                                src={patient.image}
-                                alt={patient.name}
-                                className="w-8 h-8 rounded-full ml-2 object-cover"
-                            />
-                        )}
+
                     </div>
                 ))}
             </div>
 
             <div className="flex items-center">
-                <input 
+                <input
                     type="text"
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
@@ -95,7 +99,7 @@ const PatientMessage = ({ patientId }) => {
                     className="flex-grow mr-2 p-2 text-sm border rounded focus:outline-none focus:ring-2 focus:ring-blue-200"
                     onKeyUp={(e) => e.key === 'Enter' && handleSendMessage()}
                 />
-                <button 
+                <button
                     onClick={handleSendMessage}
                     className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"
                 >

@@ -82,7 +82,7 @@ const Demographics = ({ patientId }) => {
     };
 
     return (
-        <div className="rounded-lg h-full p-4 flex flex-col max-w-xl mx-auto">
+        <div className="rounded-lg h-full p-2 flex flex-col max-w-xl mx-auto">
             <div className="flex justify-center mb-6">
                 <div className="relative">
                     <img

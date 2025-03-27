@@ -68,9 +68,11 @@ const DisordersTrends = ({ patientId }) => {
     }
 
     return (
-        <div className=" rounded-lg h-full p-4">
-            <div className="h-full w-full">
-                <ResponsiveContainer width="100%" height="100%">
+        <div className=" rounded-lg h-[235px] p-2">
+            <div className="h-full w-full ">
+
+                <h3 className="text-sm font-semibold text-gray-700 pb-3 border-b">Primary Disorder Trends</h3>
+                <ResponsiveContainer width="100%" height="90%">
                     <LineChart
                         data={chartData}
                         margin={{ top: 10, right: 10, left: -15, bottom: 0 }}
@@ -92,7 +94,7 @@ const DisordersTrends = ({ patientId }) => {
                                 angle: -90,
                                 position: "insideLeft",
                                 style: { textAnchor: "middle", fontSize: 12 },
-                                dx: 20 
+                                dx: 20
                             }}
                         />
 

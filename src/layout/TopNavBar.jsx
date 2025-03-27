@@ -258,7 +258,7 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
                     >
                         <span className="mr-2 text-sm font-medium text-neutral-700">Dr. Smith</span>
                         <img
-                            src="src/assets/Doc.png"
+                            src="data/assets/Doc.png"
                             className="w-10 h-10 rounded-md object-cover"
                         />
                         

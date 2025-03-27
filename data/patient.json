@@ -1,0 +1,520 @@
+{
+    "patients": [
+        {
+            "id": 1,
+            "name": "Emily Johnson",
+            "image": "../../../data/assets/patient/patient_1.png",
+            "tags": [
+                "Cardiology",
+                "High Risk"
+            ],
+            "pinned": false,
+            "age": 45,
+            "gender": "Female",
+            "contactNumber": "+1 (555) 123-4567",
+            "email": "emily.johnson@gg.com",
+            "primaryCondition": "Hypertension",
+            "secondaryConditions": [
+                "Diabetes Type 2"
+            ],
+            "lastVisitDate": "2024-03-15",
+            "nextAppointmentDate": "2024-06-20",
+            "medications": [
+                {
+                    "name": "Metformin",
+                    "dosage": "500mg",
+                    "frequency": "Twice daily"
+                },
+                {
+                    "name": "Lisinopril",
+                    "dosage": "10mg",
+                    "frequency": "Once daily"
+                }
+            ],
+            "vitals": {
+                "bloodPressure": "138/85",
+                "heartRate": 72,
+                "weight": 78.5,
+                "height": 165
+            },
+            "allergies": [
+                "Penicillin"
+            ],
+            "laboratoryResults": {
+                "hba1c": 6.8,
+                "cholesterol": {
+                    "total": 210,
+                    "ldl": 130,
+                    "hdl": 55
+                }
+            },
+            "disorders": [
+                {
+                    "disorder": "MDD",
+                    "severity_trend": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        5,
+                        4,
+                        3
+                    ]
+                },
+                {
+                    "disorder": "GAD",
+                    "severity_trend": [
+                        6,
+                        5,
+                        4,
+                        3,
+                        2,
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "disorder": "BD",
+                    "severity_trend": [
+                        7,
+                        6,
+                        5,
+                        7,
+                        8,
+                        6,
+                        5
+                    ]
+                },
+                {
+                    "disorder": "OCD",
+                    "severity_trend": [
+                        5,
+                        6,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
+                        8,
+                        7,
+                        6,
+                        5,
+                        6,
+                        7,
+                        8
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Michael Chen",
+            "image": "../../../data/assets/patient/patient_2.png",
+            "tags": [
+                "Neurology"
+            ],
+            "pinned": false,
+            "age": 52,
+            "gender": "Male",
+            "contactNumber": "+1 (555) 987-6543",
+            "email": "michael.chen@gg.com",
+            "primaryCondition": "Chronic Kidney Disease",
+            "secondaryConditions": [
+                "Hypertension"
+            ],
+            "lastVisitDate": "2024-02-28",
+            "nextAppointmentDate": "2024-05-15",
+            "medications": [
+                {
+                    "name": "Enalapril",
+                    "dosage": "20mg",
+                    "frequency": "Once daily"
+                }
+            ],
+            "vitals": {
+                "bloodPressure": "145/90",
+                "heartRate": 68,
+                "weight": 82.3,
+                "height": 175
+            },
+            "allergies": [
+                "Sulfa Drugs"
+            ],
+            "laboratoryResults": {
+                "kidneyFunction": {
+                    "creatinine": 1.6,
+                    "gfrEstimate": 45
+                }
+            },
+            "disorders": [
+                {
+                    "disorder": "MDD",
+                    "severity_trend": [
+                        4,
+                        5,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2
+                    ]
+                },
+                {
+                    "disorder": "GAD",
+                    "severity_trend": [
+                        5,
+                        4,
+                        3,
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "disorder": "BD",
+                    "severity_trend": [
+                        6,
+                        5,
+                        4,
+                        6,
+                        7,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "disorder": "OCD",
+                    "severity_trend": [
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2,
+                        1
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
+                        9,
+                        8,
+                        7,
+                        6,
+                        7,
+                        8,
+                        9
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Sarah Rodriguez",
+            "image": "../../../data/assets/patient/patient_3.png",
+            "tags": [
+                "Pediatrics",
+                "Rare Condition"
+            ],
+            "pinned": true,
+            "age": 8,
+            "gender": "Female",
+            "contactNumber": "+1 (555) 234-5678",
+            "email": "sarah.rodi@gg.com",
+            "primaryCondition": "Cystic Fibrosis",
+            "secondaryConditions": [],
+            "lastVisitDate": "2024-03-10",
+            "nextAppointmentDate": "2024-06-18",
+            "medications": [
+                {
+                    "name": "Ivacaftor",
+                    "dosage": "150mg",
+                    "frequency": "Twice daily"
+                }
+            ],
+            "vitals": {
+                "bloodPressure": "105/70",
+                "heartRate": 88,
+                "weight": 28.2,
+                "height": 130
+            },
+            "allergies": [
+                "Peanuts"
+            ],
+            "laboratoryResults": {
+                "lungFunction": {
+                    "fev1": 65
+                }
+            },
+            "disorders": [
+                {
+                    "disorder": "MDD",
+                    "severity_trend": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "disorder": "GAD",
+                    "severity_trend": [
+                        4,
+                        3,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "disorder": "BD",
+                    "severity_trend": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        7,
+                        6,
+                        5
+                    ]
+                },
+                {
+                    "disorder": "OCD",
+                    "severity_trend": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        6,
+                        5
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
+                        6,
+                        7,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "David Kim",
+            "image": "../../../data/assets/patient/patient_4.png",
+            "tags": [
+                "Oncology"
+            ],
+            "pinned": false,
+            "age": 60,
+            "gender": "Male",
+            "contactNumber": "+1 (555) 345-6789",
+            "email": "david.kim@gg.com",
+            "primaryCondition": "Lung Cancer",
+            "secondaryConditions": [],
+            "lastVisitDate": "2024-04-02",
+            "nextAppointmentDate": "2024-07-10",
+            "medications": [
+                {
+                    "name": "Pembrolizumab",
+                    "dosage": "200mg",
+                    "frequency": "Once every 3 weeks"
+                }
+            ],
+            "vitals": {
+                "bloodPressure": "125/80",
+                "heartRate": 75,
+                "weight": 74.5,
+                "height": 170
+            },
+            "allergies": [
+            ],
+            "laboratoryResults": {
+                "tumorMarkers": {
+                    "cea": 5.2
+                }
+            },
+            "disorders": [
+                {
+                    "disorder": "MDD",
+                    "severity_trend": [
+                        3,
+                        4,
+                        3,
+                        2,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "disorder": "GAD",
+                    "severity_trend": [
+                        6,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2
+                    ]
+                },
+                {
+                    "disorder": "BD",
+                    "severity_trend": [
+                        5,
+                        4,
+                        5,
+                        6,
+                        5,
+                        4,
+                        3
+                    ]
+                },
+                {
+                    "disorder": "OCD",
+                    "severity_trend": [
+                        8,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
+                        9,
+                        8,
+                        9,
+                        8,
+                        7,
+                        6,
+                        5
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Olivia Martinez",
+            "image": "../../../data/assets/patient/patient_5.png",
+            "tags": [
+                "Dermatology"
+            ],
+            "pinned": false,
+            "age": 30,
+            "gender": "Female",
+            "contactNumber": "+1 (555) 456-7890",
+            "email": "olivia.marti@gg.com",
+            "primaryCondition": "Psoriasis",
+            "secondaryConditions": [
+                "Psoriatic Arthritis"
+            ],
+            "lastVisitDate": "2024-03-22",
+            "nextAppointmentDate": "2024-06-28",
+            "medications": [
+                {
+                    "name": "Adalimumab",
+                    "dosage": "40mg",
+                    "frequency": "Once every 2 weeks"
+                }
+            ],
+            "vitals": {
+                "bloodPressure": "120/75",
+                "heartRate": 70,
+                "weight": 65.2,
+                "height": 160
+            },
+            "allergies": [
+                "Latex"
+            ],
+            "laboratoryResults": {
+                "immuneMarkers": {
+                    "crp": 3.1
+                }
+            },
+            "disorders": [
+                {
+                    "disorder": "MDD",
+                    "severity_trend": [
+                        4,
+                        5,
+                        4,
+                        3,
+                        2,
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "disorder": "GAD",
+                    "severity_trend": [
+                        7,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3
+                    ]
+                },
+                {
+                    "disorder": "BD",
+                    "severity_trend": [
+                        6,
+                        5,
+                        6,
+                        7,
+                        6,
+                        5,
+                        4
+                    ]
+                },
+                {
+                    "disorder": "OCD",
+                    "severity_trend": [
+                        5,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2,
+                        1
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
+                        8,
+                        9,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4
+                    ]
+                }
+            ]
+        }
+    ]
+}

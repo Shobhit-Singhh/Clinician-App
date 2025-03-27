@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Calendar, Pill, PlusCircle, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import patientsData from '../../../data/patient.json';
 
-const KPICard = ({ title, icon: Icon, color, children, onRemove }) => {
+const KPICard = ({ title, icon: Icon, color: color, children, onRemove }) => {
     const [currentPage, setCurrentPage] = useState(0);
     const itemsPerPage = 1;
 
@@ -19,7 +19,7 @@ const KPICard = ({ title, icon: Icon, color, children, onRemove }) => {
     };
 
     return (
-        <div className={`flex-shrink-0 w-full max-w-48 h-full bg-${color}-100 border-l-4 border-${color}-600 rounded-lg p-4 text-xs shadow-md relative`}>
+        <div className={`flex-shrink-0 w-full max-w-48 h-full bg-${color}-100  border-${color} rounded-lg p-4 text-xs shadow-md relative`}>
             {onRemove && (
                 <button
                     onClick={onRemove}
@@ -119,8 +119,8 @@ const KPI = ({ patientId }) => {
     const availableResults = Object.entries(patient.laboratoryResults || {});
 
     return (
-        <div className=" rounded-lg h-full p-4 bg-white">
-            <div className="flex space-x-4 h-full overflow-x-auto">
+        <div className="rounded-lg h-full ">
+            <div className="flex space-x-4 p-4 h-full overflow-x-auto">
                 {/* Appointments Card */}
                 <KPICard title="Appointments" icon={Calendar} color="blue">
                     {patient.lastVisitDate && (
@@ -148,13 +148,14 @@ const KPI = ({ patientId }) => {
                 </KPICard>
 
                 {/* Medications Card */}
-                <KPICard title="Medications" icon={Pill} color="purple">
+                <KPICard title="Medications" icon={Pill} color="red">
                     {patient.medications.map((med, index) => (
                         <div key={index} className="space-y-1">
-                            <div className="text-2xl font-extrabold text-purple-800 mb-1">
+                            <div className="text-2xl py-2 font-extrabold text-purple-800 mb-1">
                                 {med.dosage}
                             </div>
-                            <div className="text-xs text-gray-600"><strong className="text-sm font-medium">{med.name} / </strong>{med.frequency}</div>
+                            <strong className="text-sm font-medium">{med.name}</strong>
+                            <div className="text-xs text-gray-600">{med.frequency}</div>
                         </div>
                     ))}
                 </KPICard>
@@ -164,21 +165,24 @@ const KPI = ({ patientId }) => {
                     <KPICard
                         key={index}
                         title={result.category}
-                        icon={Pill}
+                        icon={PlusCircle}
                         color="green"
                         onRemove={() => handleRemoveResult(result.category)}
                     >
                         {typeof result.results === 'object' ? (
                             Object.entries(result.results).map(([key, value]) => (
                                 <div key={key} className="space-y-1">
-                                    <div className="text-3xl font-extrabold text-green-800 mb-1">
+                                    <div className="text-3xl py-3 font-extrabold text-green-800 mb-1">
                                         {value}
                                     </div>
-                                    <div className="text-sm font-medium">{key}</div>
+                                    <div className="text-xl font-medium">{key}</div>
                                 </div>
                             ))
                         ) : (
-                            <div className="text-3xl font-extrabold text-green-800">{result.results}</div>
+                            <>
+                                <div className="text-3xl py-3 font-extrabold text-green-800">{result.results}</div>
+                                <div className="text-xl font-medium">Result</div>
+                            </>
                         )}
                     </KPICard>
                 ))}

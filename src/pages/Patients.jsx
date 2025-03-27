@@ -49,7 +49,7 @@ const Patients = () => {
 
               {/* Patient Message */}
               <div className="w-1/3">
-                <PatientMessage patientId={selectedPatientId} />
+                <Followup patientId={selectedPatientId} />
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Patients = () => {
 
           {/* Followup - 1/4 width */}
           <div className="w-1/4 h-full">
-            <Followup patientId={selectedPatientId} />
+            <PatientMessage patientId={selectedPatientId} />
           </div>
         </div>
       </div>

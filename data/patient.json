@@ -109,253 +109,2000 @@
                         8
                     ]
                 }
-            ]
+            ],
+            "messages": [
+                {
+                    "id": 1,
+                    "text": "Hello Emily, I wanted to discuss your recent blood pressure readings.",
+                    "sender": "doctor",
+                    "timestamp": "2024-03-20T10:30:00Z"
+                },
+                {
+                    "id": 2,
+                    "text": "Hi doctor, I've been monitoring my blood pressure as you suggested.",
+                    "sender": "patient",
+                    "timestamp": "2024-03-20T10:45:00Z"
+                }
+            ],
+            "assessments": [
+                {
+                    "id": "mood_assessment_1",
+                    "type": "Mood Assessment",
+                    "category": "Mood",
+                    "status": "in_progress",
+                    "assignedDate": "2024-03-15",
+                    "completedDate": null,
+                    "completionPercentage": 60,
+                    "notes": "Patient showing mixed symptoms",
+                    "assignedBy": "Dr. Smith"
+                },
+                {
+                    "id": "anxiety_screening_1",
+                    "type": "Anxiety Screening",
+                    "category": "Anxiety",
+                    "status": "completed",
+                    "assignedDate": "2024-02-20",
+                    "completedDate": "2024-03-10",
+                    "completionPercentage": 100,
+                    "notes": "Moderate anxiety levels detected",
+                    "assignedBy": "Dr. Johnson"
+                }
+            ],
+            "reports": {
+                "diagnosis": {
+                    "mentalHealthDisorders": [
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        },
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.9",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "assessmentLog": [
+                                {
+                                    "date": "2024-03-20",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:19:00Z"
+                                        },
+                                        {
+                                            "id": 21,
+                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
+                                            "sender": "AI",
+                                            "timestamp": "2024-03-20T10:20:00Z"
+                                        },
+                                        {
+                                            "id": 22,
+                                            "text": "Thank you. I appreciate it.",
+                                            "sender": "Patient",
+                                            "timestamp": "2024-03-20T10:21:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression"
+                                }
+                            ],
+                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        }
+                    ]
+                },
+                "medicalHistory": {
+                    "personalMedicalHistory": [
+                        {
+                            "condition": "Hypertension",
+                            "diagnosisDate": "2022-06-10",
+                            "currentStatus": "Managed",
+                            "treatments": [
+                                "Lisinopril 10mg daily"
+                            ],
+                            "lastCheckup": "2024-03-15"
+                        },
+                        {
+                            "condition": "Type 2 Diabetes",
+                            "diagnosisDate": "2021-11-20",
+                            "currentStatus": "Controlled",
+                            "treatments": [
+                                "Metformin 500mg twice daily",
+                                "Diet modification"
+                            ],
+                            "lastCheckup": "2024-02-28"
+                        }
+                    ],
+                    "familyMedicalHistory": [
+                        {
+                            "relation": "Mother",
+                            "conditions": [
+                                "Breast Cancer",
+                                "Hypertension"
+                            ],
+                            "ageOfOnset": [
+                                "55",
+                                "48"
+                            ]
+                        },
+                        {
+                            "relation": "Father",
+                            "conditions": [
+                                "Type 2 Diabetes",
+                                "Heart Disease"
+                            ],
+                            "ageOfOnset": [
+                                "52",
+                                "60"
+                            ]
+                        }
+                    ],
+                    "environmentalHistory": [
+                        {
+                            "type": "Occupational Exposure",
+                            "details": "Office worker, sedentary job with high stress",
+                            "potentialHealthRisks": [
+                                "Repetitive Strain Injury",
+                                "Chronic Stress"
+                            ]
+                        },
+                        {
+                            "type": "Living Environment",
+                            "details": "Urban apartment, close to major road",
+                            "potentialHealthRisks": [
+                                "Air Pollution Exposure"
+                            ]
+                        }
+                    ]
+                },
+                "miscellaneous": {
+                    "lifestyle": {
+                        "diet": "Balanced diet, occasional processed foods",
+                        "exercise": "30 minutes walk, 3 times a week",
+                        "sleepPattern": "6-7 hours, occasional insomnia"
+                    },
+                    "socialHistory": {
+                        "maritalStatus": "Married",
+                        "occupation": "Marketing Manager",
+                        "socialSupport": "Strong family support, active in community groups"
+                    },
+                    "additionalNotes": [
+                        {
+                            "date": "2024-03-20",
+                            "note": "Patient expressed interest in stress management techniques",
+                            "author": "Dr. Sarah Thompson"
+                        }
+                    ]
+                }
+            }
         },
         {
             "id": 2,
-            "name": "Michael Chen",
+            "name": "Michael Carter",
             "image": "../../../data/assets/patient/patient_2.png",
             "tags": [
-                "Neurology"
+                "Neurology",
+                "Chronic Condition"
             ],
-            "pinned": false,
+            "pinned": true,
             "age": 52,
             "gender": "Male",
-            "contactNumber": "+1 (555) 987-6543",
-            "email": "michael.chen@gg.com",
-            "primaryCondition": "Chronic Kidney Disease",
+            "contactNumber": "+1 (555) 234-5678",
+            "email": "michael.carter@gg.com",
+            "primaryCondition": "Parkinson's Disease",
             "secondaryConditions": [
                 "Hypertension"
             ],
-            "lastVisitDate": "2024-02-28",
-            "nextAppointmentDate": "2024-05-15",
+            "lastVisitDate": "2024-04-10",
+            "nextAppointmentDate": "2024-07-05",
             "medications": [
                 {
-                    "name": "Enalapril",
-                    "dosage": "20mg",
+                    "name": "Levodopa",
+                    "dosage": "100mg",
+                    "frequency": "Three times daily"
+                },
+                {
+                    "name": "Amlodipine",
+                    "dosage": "5mg",
                     "frequency": "Once daily"
                 }
             ],
             "vitals": {
-                "bloodPressure": "145/90",
-                "heartRate": 68,
-                "weight": 82.3,
+                "bloodPressure": "135/82",
+                "heartRate": 70,
+                "weight": 80.2,
                 "height": 175
             },
             "allergies": [
-                "Sulfa Drugs"
+                "Sulfa drugs"
             ],
             "laboratoryResults": {
-                "kidneyFunction": {
-                    "creatinine": 1.6,
-                    "gfrEstimate": 45
+                "hba1c": 5.9,
+                "cholesterol": {
+                    "total": 195,
+                    "ldl": 110,
+                    "hdl": 60
                 }
             },
             "disorders": [
                 {
                     "disorder": "MDD",
                     "severity_trend": [
-                        4,
-                        5,
-                        6,
-                        5,
-                        4,
+                        2,
                         3,
-                        2
+                        4,
+                        6,
+                        7,
+                        6,
+                        5
                     ]
                 },
                 {
                     "disorder": "GAD",
                     "severity_trend": [
                         5,
-                        4,
-                        3,
-                        2,
-                        3,
-                        4,
-                        5
-                    ]
-                },
-                {
-                    "disorder": "BD",
-                    "severity_trend": [
-                        6,
-                        5,
-                        4,
-                        6,
-                        7,
-                        5,
-                        4
-                    ]
-                },
-                {
-                    "disorder": "OCD",
-                    "severity_trend": [
-                        7,
-                        6,
-                        5,
-                        4,
-                        3,
-                        2,
-                        1
-                    ]
-                },
-                {
-                    "disorder": "PTSD",
-                    "severity_trend": [
-                        9,
-                        8,
-                        7,
-                        6,
-                        7,
-                        8,
-                        9
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "name": "Sarah Rodriguez",
-            "image": "../../../data/assets/patient/patient_3.png",
-            "tags": [
-                "Pediatrics",
-                "Rare Condition"
-            ],
-            "pinned": true,
-            "age": 8,
-            "gender": "Female",
-            "contactNumber": "+1 (555) 234-5678",
-            "email": "sarah.rodi@gg.com",
-            "primaryCondition": "Cystic Fibrosis",
-            "secondaryConditions": [],
-            "lastVisitDate": "2024-03-10",
-            "nextAppointmentDate": "2024-06-18",
-            "medications": [
-                {
-                    "name": "Ivacaftor",
-                    "dosage": "150mg",
-                    "frequency": "Twice daily"
-                }
-            ],
-            "vitals": {
-                "bloodPressure": "105/70",
-                "heartRate": 88,
-                "weight": 28.2,
-                "height": 130
-            },
-            "allergies": [
-                "Peanuts"
-            ],
-            "laboratoryResults": {
-                "lungFunction": {
-                    "fev1": 65
-                }
-            },
-            "disorders": [
-                {
-                    "disorder": "MDD",
-                    "severity_trend": [
-                        2,
-                        3,
-                        4,
-                        5,
-                        6,
-                        5,
-                        4
-                    ]
-                },
-                {
-                    "disorder": "GAD",
-                    "severity_trend": [
-                        4,
-                        3,
-                        2,
-                        3,
-                        4,
-                        5,
-                        6
-                    ]
-                },
-                {
-                    "disorder": "BD",
-                    "severity_trend": [
-                        5,
-                        6,
-                        7,
-                        8,
-                        7,
-                        6,
-                        5
-                    ]
-                },
-                {
-                    "disorder": "OCD",
-                    "severity_trend": [
-                        3,
-                        4,
-                        5,
-                        6,
-                        7,
-                        6,
-                        5
-                    ]
-                },
-                {
-                    "disorder": "PTSD",
-                    "severity_trend": [
-                        6,
-                        7,
-                        8,
-                        7,
-                        6,
-                        5,
-                        4
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "name": "David Kim",
-            "image": "../../../data/assets/patient/patient_4.png",
-            "tags": [
-                "Oncology"
-            ],
-            "pinned": false,
-            "age": 60,
-            "gender": "Male",
-            "contactNumber": "+1 (555) 345-6789",
-            "email": "david.kim@gg.com",
-            "primaryCondition": "Lung Cancer",
-            "secondaryConditions": [],
-            "lastVisitDate": "2024-04-02",
-            "nextAppointmentDate": "2024-07-10",
-            "medications": [
-                {
-                    "name": "Pembrolizumab",
-                    "dosage": "200mg",
-                    "frequency": "Once every 3 weeks"
-                }
-            ],
-            "vitals": {
-                "bloodPressure": "125/80",
-                "heartRate": 75,
-                "weight": 74.5,
-                "height": 170
-            },
-            "allergies": [
-            ],
-            "laboratoryResults": {
-                "tumorMarkers": {
-                    "cea": 5.2
-                }
-            },
-            "disorders": [
-                {
-                    "disorder": "MDD",
-                    "severity_trend": [
-                        3,
                         4,
                         3,
                         2,
@@ -365,34 +2112,136 @@
                     ]
                 },
                 {
-                    "disorder": "GAD",
-                    "severity_trend": [
-                        6,
-                        7,
-                        6,
-                        5,
-                        4,
-                        3,
-                        2
-                    ]
-                },
-                {
                     "disorder": "BD",
                     "severity_trend": [
-                        5,
-                        4,
-                        5,
                         6,
                         5,
                         4,
-                        3
+                        5,
+                        4,
+                        6,
+                        7
                     ]
                 },
                 {
                     "disorder": "OCD",
                     "severity_trend": [
-                        8,
+                        5,
+                        4,
+                        3,
+                        2,
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
                         7,
+                        6,
+                        7,
+                        5,
+                        4,
+                        5,
+                        6
+                    ]
+                }
+            ],
+            "messages": [
+                {
+                    "id": 1,
+                    "text": "Michael, let’s go over your recent neurological assessment.",
+                    "sender": "doctor",
+                    "timestamp": "2024-04-15T09:00:00Z"
+                },
+                {
+                    "id": 2,
+                    "text": "Thanks, doctor. I’ve noticed some hand tremors recently.",
+                    "sender": "patient",
+                    "timestamp": "2024-04-15T09:15:00Z"
+                }
+            ],
+            "assessments": [
+                {
+                    "id": "tremor_assessment_1",
+                    "type": "Tremor Severity Assessment",
+                    "category": "Motor Function",
+                    "status": "in_progress",
+                    "assignedDate": "2024-04-10",
+                    "completedDate": null,
+                    "completionPercentage": 50,
+                    "notes": "Patient reports increased tremors in the morning",
+                    "assignedBy": "Dr. Brown"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Sophia Martinez",
+            "image": "../../../data/assets/patient/patient_3.png",
+            "tags": [
+                "Endocrinology",
+                "High Risk"
+            ],
+            "pinned": false,
+            "age": 60,
+            "gender": "Female",
+            "contactNumber": "+1 (555) 345-6789",
+            "email": "sophia.martinez@gg.com",
+            "primaryCondition": "Diabetes Type 2",
+            "secondaryConditions": [
+                "Obesity"
+            ],
+            "lastVisitDate": "2024-03-20",
+            "nextAppointmentDate": "2024-06-15",
+            "medications": [
+                {
+                    "name": "Metformin",
+                    "dosage": "850mg",
+                    "frequency": "Twice daily"
+                },
+                {
+                    "name": "Atorvastatin",
+                    "dosage": "20mg",
+                    "frequency": "Once daily"
+                }
+            ],
+            "vitals": {
+                "bloodPressure": "142/88",
+                "heartRate": 76,
+                "weight": 95.0,
+                "height": 160
+            },
+            "allergies": [
+                "Aspirin"
+            ],
+            "laboratoryResults": {
+                "hba1c": 7.2,
+                "cholesterol": {
+                    "total": 220,
+                    "ldl": 140,
+                    "hdl": 50
+                }
+            },
+            "disorders": [
+                {
+                    "disorder": "GAD",
+                    "severity_trend": [
+                        5,
+                        4,
+                        4,
+                        3,
+                        2,
+                        2,
+                        1
+                    ]
+                },
+                {
+                    "disorder": "OCD",
+                    "severity_trend": [
+                        4,
+                        5,
                         6,
                         5,
                         4,
@@ -403,79 +2252,163 @@
                 {
                     "disorder": "PTSD",
                     "severity_trend": [
-                        9,
-                        8,
-                        9,
-                        8,
-                        7,
                         6,
-                        5
+                        5,
+                        4,
+                        3,
+                        4,
+                        5,
+                        6
                     ]
+                },
+                {
+                    "disorder": "MDD",
+                    "severity_trend": [
+                        6,
+                        5,
+                        4,
+                        3,
+                        7,
+                        2,
+                        1
+                    ]
+                },
+                {
+                    "disorder": "BD",
+                    "severity_trend": [
+                        4,
+                        5,
+                        6,
+                        5,
+                        3,
+                        3,
+                        2
+                    ]
+                }
+            ],
+            "messages": [
+                {
+                    "id": 1,
+                    "text": "Sophia, we need to review your latest HbA1c results.",
+                    "sender": "doctor",
+                    "timestamp": "2024-03-25T11:00:00Z"
+                },
+                {
+                    "id": 2,
+                    "text": "I’ve been trying to manage my diet better, but it’s been difficult.",
+                    "sender": "patient",
+                    "timestamp": "2024-03-25T11:15:00Z"
+                }
+            ],
+            "assessments": [
+                {
+                    "id": "Eating Disorder_1",
+                    "type": "Eating Disorder Assessment",
+                    "category": "Mental Health",
+                    "status": "completed",
+                    "assignedDate": "2024-03-01",
+                    "completedDate": "2024-03-20",
+                    "completionPercentage": 100,
+                    "notes": "Patient shows signs of binge eating disorder",
+                    "assignedBy": "Dr. Patel"
                 }
             ]
         },
         {
-            "id": 5,
-            "name": "Olivia Martinez",
-            "image": "../../../data/assets/patient/patient_5.png",
+            "id": 4,
+            "name": "David Thompson",
+            "image": "../../../data/assets/patient/patient_4.png",
             "tags": [
-                "Dermatology"
+                "Pulmonology",
+                "Chronic Condition"
             ],
-            "pinned": false,
-            "age": 30,
-            "gender": "Female",
+            "pinned": true,
+            "age": 58,
+            "gender": "Male",
             "contactNumber": "+1 (555) 456-7890",
-            "email": "olivia.marti@gg.com",
-            "primaryCondition": "Psoriasis",
+            "email": "david.thompson@gg.com",
+            "primaryCondition": "COPD",
             "secondaryConditions": [
-                "Psoriatic Arthritis"
+                "Hypertension"
             ],
-            "lastVisitDate": "2024-03-22",
-            "nextAppointmentDate": "2024-06-28",
+            "lastVisitDate": "2024-05-02",
+            "nextAppointmentDate": "2024-07-10",
             "medications": [
                 {
-                    "name": "Adalimumab",
-                    "dosage": "40mg",
-                    "frequency": "Once every 2 weeks"
+                    "name": "Tiotropium",
+                    "dosage": "18mcg",
+                    "frequency": "Once daily"
+                },
+                {
+                    "name": "Lisinopril",
+                    "dosage": "10mg",
+                    "frequency": "Once daily"
                 }
             ],
             "vitals": {
-                "bloodPressure": "120/75",
-                "heartRate": 70,
-                "weight": 65.2,
-                "height": 160
+                "bloodPressure": "140/90",
+                "heartRate": 78,
+                "weight": 85.4,
+                "height": 172
             },
             "allergies": [
-                "Latex"
+                "NSAIDs"
             ],
             "laboratoryResults": {
-                "immuneMarkers": {
-                    "crp": 3.1
+                "hba1c": 5.8,
+                "cholesterol": {
+                    "total": 200,
+                    "ldl": 120,
+                    "hdl": 55
                 }
             },
             "disorders": [
                 {
                     "disorder": "MDD",
                     "severity_trend": [
+                        3,
+                        3,
                         4,
                         5,
                         4,
                         3,
-                        2,
-                        3,
+                        2
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
+                        6,
+                        7,
+                        6,
+                        5,
+                        6,
+                        5,
                         4
                     ]
                 },
                 {
                     "disorder": "GAD",
                     "severity_trend": [
-                        7,
-                        8,
-                        7,
+                        5,
+                        4,
+                        3,
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "disorder": "OCD",
+                    "severity_trend": [
+                        4,
+                        5,
                         6,
                         5,
                         4,
-                        3
+                        3,
+                        2
                     ]
                 },
                 {
@@ -483,17 +2416,142 @@
                     "severity_trend": [
                         6,
                         5,
+                        4,
+                        3,
+                        4,
+                        5,
+                        6
+                    ]
+                }
+            ],
+            "messages": [
+                {
+                    "id": 1,
+                    "text": "David, let’s review your lung function test results.",
+                    "sender": "doctor",
+                    "timestamp": "2024-05-05T14:00:00Z"
+                },
+                {
+                    "id": 2,
+                    "text": "I’ve been using my inhaler more often lately.",
+                    "sender": "patient",
+                    "timestamp": "2024-05-05T14:15:00Z"
+                },
+                {
+                    "id": 3,
+                    "text": "We may need to adjust your medication dosage. I’ll review the results and get back to you.",
+                    "sender": "doctor",
+                    "timestamp": "2024-05-05T14:30:00Z"
+                },
+                {
+                    "id": 4,
+                    "text": "Thank you, doctor. I appreciate your help.",
+                    "sender": "patient",
+                    "timestamp": "2024-05-05T14:45:00Z"
+                }
+            ],
+            "assessments": [
+                {
+                    "id": "Bipoler_disorder_1",
+                    "type": "Bipoler Disorder",
+                    "category": "Personality",
+                    "status": "completed",
+                    "assignedDate": "2024-04-01",
+                    "completedDate": "2024-04-20",
+                    "completionPercentage": 100,
+                    "notes": "Patient responding well to treatment, mild side effects noted",
+                    "assignedBy": "Dr. Patel"
+                },
+                {
+                    "id": "anxiety_screening_2",
+                    "type": "Anxiety Screening",
+                    "category": "Anxiety",
+                    "status": "completed",
+                    "assignedDate": "2024-04-10",
+                    "completedDate": "2024-04-25",
+                    "completionPercentage": 100,
+                    "notes": "Mild anxiety levels detected",
+                    "assignedBy": "Dr. Johnson"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Olivia Baker",
+            "image": "../../../data/assets/patient/patient_5.png",
+            "tags": [
+                "Oncology",
+                "High Risk"
+            ],
+            "pinned": false,
+            "age": 50,
+            "gender": "Female",
+            "contactNumber": "+1 (555) 567-8901",
+            "email": "olivia.baker@gg.com",
+            "primaryCondition": "Breast Cancer",
+            "secondaryConditions": [
+                "Osteoporosis"
+            ],
+            "lastVisitDate": "2024-04-18",
+            "nextAppointmentDate": "2024-06-22",
+            "medications": [
+                {
+                    "name": "Letrozole",
+                    "dosage": "2.5mg",
+                    "frequency": "Once daily"
+                },
+                {
+                    "name": "Calcium + Vitamin D",
+                    "dosage": "500mg/400IU",
+                    "frequency": "Twice daily"
+                }
+            ],
+            "vitals": {
+                "bloodPressure": "125/80",
+                "heartRate": 72,
+                "weight": 68.9,
+                "height": 167
+            },
+            "allergies": [
+                "None"
+            ],
+            "laboratoryResults": {
+                "hba1c": 5.6,
+                "cholesterol": {
+                    "total": 180,
+                    "ldl": 100,
+                    "hdl": 60
+                }
+            },
+            "disorders": [
+                {
+                    "disorder": "GAD",
+                    "severity_trend": [
+                        4,
+                        5,
                         6,
-                        7,
                         6,
                         5,
-                        4
+                        4,
+                        3
                     ]
                 },
                 {
                     "disorder": "OCD",
                     "severity_trend": [
+                        6,
                         5,
+                        4,
+                        4,
+                        3,
+                        2,
+                        2
+                    ]
+                },
+                {
+                    "disorder": "PTSD",
+                    "severity_trend": [
+                        7,
                         6,
                         5,
                         4,
@@ -503,16 +2561,66 @@
                     ]
                 },
                 {
-                    "disorder": "PTSD",
+                    "disorder": "MDD",
                     "severity_trend": [
-                        8,
-                        9,
-                        8,
-                        7,
+                        5,
+                        4,
+                        3,
+                        2,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "disorder": "BD",
+                    "severity_trend": [
                         6,
                         5,
+                        4,
+                        3,
+                        2,
+                        3,
                         4
                     ]
+                }
+            ],
+            "messages": [
+                {
+                    "id": 1,
+                    "text": "Olivia, we need to discuss your recent tumor marker results.",
+                    "sender": "doctor",
+                    "timestamp": "2024-04-20T10:00:00Z"
+                },
+                {
+                    "id": 2,
+                    "text": "I’m feeling a bit anxious about the results. What do they indicate?",
+                    "sender": "patient",
+                    "timestamp": "2024-04-20T10:15:00Z"
+                }
+            ],
+            "assessments": [
+                {
+                    "id": "Schizophrenia_2",
+                    "type": "Schizophrenia",
+                    "category": "Mental Health",
+                    "status": "in_progress",
+                    "assignedDate": "2024-04-18",
+                    "completedDate": null,
+                    "completionPercentage": 50,
+                    "notes": "Patient showing early signs of schizophrenia",
+                    "assignedBy": "Dr. Brown"
+                },
+                {
+                    "id": "anxiety_screening_3",
+                    "type": "Anxiety Screening",
+                    "category": "Anxiety",
+                    "status": "completed",
+                    "assignedDate": "2024-03-20",
+                    "completedDate": "2024-04-10",
+                    "completionPercentage": 100,
+                    "notes": "Moderate anxiety levels detected",
+                    "assignedBy": "Dr. Johnson"
                 }
             ]
         }

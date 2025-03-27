@@ -68,7 +68,7 @@ const DisordersTrends = ({ patientId }) => {
     }
 
     return (
-        <div className="bg-white/90 rounded-lg shadow-sm h-full p-2">
+        <div className=" rounded-lg h-full p-4">
             <div className="h-full w-full">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart

@@ -52,7 +52,7 @@ const PatientList = ({ onPatientSelect }) => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-sm h-full flex flex-col relative">
+        <div className="rounded-lg shadow-sm h-full flex flex-col relative">
             <div className="p-2 border-b">
                 <input
                     type="text"

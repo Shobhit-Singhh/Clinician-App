@@ -36,59 +36,55 @@ const PatientMessage = ({ patientId }) => {
 
     if (!patient) {
         return (
-            <div className="h-full bg-white/90 rounded-lg shadow-sm flex items-center justify-center">
-                <p className="text-gray-500 text-sm">Select a patient</p>
+            <div className="h-full bg-white rounded-lg shadow-sm flex items-center justify-center">
+                <p className="text-gray-500 text-sm font-semibold">Select a patient</p>
             </div>
         );
     }
 
     return (
-        <div className=" rounded-lg h-full flex flex-col pt-6 p-2">
-            <div className="flex justify-between items-center mb-4 border-b">
+        <div className=" rounded-lg h-full flex flex-col">
+            <div className="flex justify-between items-center border-b py-3">
                 <h3 className="text-sm font-semibold text-gray-700">
                     Chat with {patient.name}
                 </h3>
             </div>
 
-            <div className="flex-grow overflow-y-auto space-y-3 pr-2">
+            <div className="flex-grow overflow-y-auto space-y-3 ">
                 {messages.map((msg) => (
                     <div
                         key={msg.id}
-                        className={`flex items-start ${msg.sender === 'doctor'
-                            ? 'justify-end'
-                            : 'justify-start'
-                            }`}
+                        className={`flex items-end gap-2 ${msg.sender === "doctor" ? "justify-end" : "justify-start"}`}
                     >
-                        {msg.sender === 'doctor' ? (<>  </>
-                        ) : (
-                            <>
-                                <img
-                                    src={patient.image}
-                                    alt={patient.name}
-                                    className="w-8 h-8 rounded-full gap-2 object-cover"
-                                />
-                                <div className='p-1'> </div>
-                            </>
-
+                        {/* Patient Avatar (Only for Patient Messages) */}
+                        {msg.sender !== "doctor" && (
+                            <img
+                                src={patient.image}
+                                alt={patient.name}
+                                className="w-8 h-8 rounded-full object-cover"
+                            />
                         )}
+
+                        {/* Message Bubble */}
                         <div
-                            className={`
-                                max-w-[100%] pt-3 px-3 pb-1  rounded-lg text-sm 
-                                ${msg.sender === 'doctor'
-                                    ? 'bg-blue-500 text-white'
-                                    : 'bg-gray-200 text-gray-800'
-                                }
-                            `}
+                            className={`max-w-[100%] p-2 rounded-lg text-sm shadow-md break-words ${msg.sender === "doctor"
+                                    ? "bg-blue-500 text-white rounded-br-none"
+                                    : "bg-gray-200 text-gray-800 rounded-bl-none"
+                                }`}
                         >
                             {msg.text}
-                            <div className="text-xs mt-1 opacity-70 text-right">
-                                {new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                            {/* Timestamp */}
+                            <div className="text-xs opacity-70 text-right mt-1">
+                                {new Date(msg.timestamp).toLocaleTimeString([], {
+                                    hour: "2-digit",
+                                    minute: "2-digit",
+                                })}
                             </div>
                         </div>
-
                     </div>
                 ))}
             </div>
+
 
             <div className="flex items-center">
                 <input

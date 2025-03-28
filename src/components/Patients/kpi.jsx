@@ -109,7 +109,7 @@ const KPI = ({ patientId }) => {
 
     if (!patient) {
         return (
-            <div className="h-full bg-white rounded-lg shadow-md flex items-center justify-center">
+            <div className="h-full bg-white rounded-lg shadow-sm flex items-center justify-center">
                 <p className="text-gray-500 text-sm font-semibold">Select a patient</p>
             </div>
         );

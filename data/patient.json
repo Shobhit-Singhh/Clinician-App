@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Emily Johnson",
-            "image": "../../../data/assets/patient/patient_1.png",
+            "image": "/assets/patient/patient_1.png",
             "tags": [
                 "Cardiology",
                 "High Risk"
@@ -128,24 +128,20 @@
                 {
                     "id": "mood_assessment_1",
                     "type": "Mood Assessment",
-                    "category": "Mood",
                     "status": "in_progress",
                     "assignedDate": "2024-03-15",
                     "completedDate": null,
                     "completionPercentage": 60,
-                    "notes": "Patient showing mixed symptoms",
-                    "assignedBy": "Dr. Smith"
+                    "notes": "Patient showing mixed symptoms"
                 },
                 {
                     "id": "anxiety_screening_1",
                     "type": "Anxiety Screening",
-                    "category": "Anxiety",
                     "status": "completed",
                     "assignedDate": "2024-02-20",
                     "completedDate": "2024-03-10",
                     "completionPercentage": 100,
-                    "notes": "Moderate anxiety levels detected",
-                    "assignedBy": "Dr. Johnson"
+                    "notes": "Moderate anxiety levels detected"
                 }
             ],
             "reports": {
@@ -298,7 +294,10 @@
                                     "interpretation": "Severe depression"
                                 }
                             ],
-                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "copingStrategies": [
+                                "Cognitive Behavioral Therapy",
+                                "Escitalopram 10mg daily"
+                            ],
                             "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
                         },
                         {
@@ -448,7 +447,10 @@
                                     "interpretation": "Severe depression"
                                 }
                             ],
-                            "copingStrategies": ["Cognitive Behavioral Therapy", "Escitalopram 10mg daily"],
+                            "copingStrategies": [
+                                "Cognitive Behavioral Therapy",
+                                "Escitalopram 10mg daily"
+                            ],
                             "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
                         }
                     ]
@@ -541,10 +543,10 @@
         {
             "id": 2,
             "name": "Michael Carter",
-            "image": "../../../data/assets/patient/patient_2.png",
+            "image": "/assets/patient/patient_2.png",
             "tags": [
                 "Neurology",
-                "Chronic Condition"
+                "Chronic "
             ],
             "pinned": true,
             "age": 52,
@@ -666,20 +668,18 @@
                 {
                     "id": "tremor_assessment_1",
                     "type": "Tremor Severity Assessment",
-                    "category": "Motor Function",
                     "status": "in_progress",
                     "assignedDate": "2024-04-10",
                     "completedDate": null,
                     "completionPercentage": 50,
-                    "notes": "Patient reports increased tremors in the morning",
-                    "assignedBy": "Dr. Brown"
+                    "notes": "Patient reports increased tremors in the morning"
                 }
             ]
         },
         {
             "id": 3,
             "name": "Sophia Martinez",
-            "image": "../../../data/assets/patient/patient_3.png",
+            "image": "/assets/patient/patient_3.png",
             "tags": [
                 "Endocrinology",
                 "High Risk"
@@ -804,23 +804,21 @@
                 {
                     "id": "Eating Disorder_1",
                     "type": "Eating Disorder Assessment",
-                    "category": "Mental Health",
                     "status": "completed",
                     "assignedDate": "2024-03-01",
                     "completedDate": "2024-03-20",
                     "completionPercentage": 100,
-                    "notes": "Patient shows signs of binge eating disorder",
-                    "assignedBy": "Dr. Patel"
+                    "notes": "Patient shows signs of binge eating disorder"
                 }
             ]
         },
         {
             "id": 4,
             "name": "David Thompson",
-            "image": "../../../data/assets/patient/patient_4.png",
+            "image": "/assets/patient/patient_4.png",
             "tags": [
                 "Pulmonology",
-                "Chronic Condition"
+                "Chronic "
             ],
             "pinned": true,
             "age": 58,
@@ -954,31 +952,27 @@
                 {
                     "id": "Bipoler_disorder_1",
                     "type": "Bipoler Disorder",
-                    "category": "Personality",
                     "status": "completed",
                     "assignedDate": "2024-04-01",
                     "completedDate": "2024-04-20",
                     "completionPercentage": 100,
-                    "notes": "Patient responding well to treatment, mild side effects noted",
-                    "assignedBy": "Dr. Patel"
+                    "notes": "Patient responding well to treatment, mild side effects noted"
                 },
                 {
                     "id": "anxiety_screening_2",
                     "type": "Anxiety Screening",
-                    "category": "Anxiety",
                     "status": "completed",
                     "assignedDate": "2024-04-10",
                     "completedDate": "2024-04-25",
                     "completionPercentage": 100,
-                    "notes": "Mild anxiety levels detected",
-                    "assignedBy": "Dr. Johnson"
+                    "notes": "Mild anxiety levels detected"
                 }
             ]
         },
         {
             "id": 5,
             "name": "Olivia Baker",
-            "image": "../../../data/assets/patient/patient_5.png",
+            "image": "/assets/patient/patient_5.png",
             "tags": [
                 "Oncology",
                 "High Risk"
@@ -1103,24 +1097,20 @@
                 {
                     "id": "Schizophrenia_2",
                     "type": "Schizophrenia",
-                    "category": "Mental Health",
                     "status": "in_progress",
                     "assignedDate": "2024-04-18",
                     "completedDate": null,
                     "completionPercentage": 50,
-                    "notes": "Patient showing early signs of schizophrenia",
-                    "assignedBy": "Dr. Brown"
+                    "notes": "Patient showing early signs of schizophrenia"
                 },
                 {
                     "id": "anxiety_screening_3",
                     "type": "Anxiety Screening",
-                    "category": "Anxiety",
                     "status": "completed",
                     "assignedDate": "2024-03-20",
                     "completedDate": "2024-04-10",
                     "completionPercentage": 100,
-                    "notes": "Moderate anxiety levels detected",
-                    "assignedBy": "Dr. Johnson"
+                    "notes": "Moderate anxiety levels detected"
                 }
             ]
         }

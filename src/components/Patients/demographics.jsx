@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { 
-    User, Clipboard, HeartPulse, 
-    ChevronLeft, ChevronRight 
+import {
+    User, Clipboard, HeartPulse,
+    ChevronLeft, ChevronRight
 } from 'lucide-react';
 import patientsData from '/data/patient.json';
 
@@ -19,8 +19,8 @@ const Demographics = ({ patientId }) => {
 
     if (!patient) {
         return (
-            <div className="h-full bg-white/90 rounded-lg shadow-sm flex items-center justify-center p-6">
-                <p className="text-gray-500 text-base">Select a patient</p>
+            <div className="h-full bg-white rounded-lg shadow-sm flex items-center justify-center">
+                <p className="text-gray-500 text-sm font-semibold">Select a patient</p>
             </div>
         );
     }
@@ -28,7 +28,7 @@ const Demographics = ({ patientId }) => {
     const pages = [
         {
             title: 'Personal',
-            icon: <User className="w-6 h-6" />, 
+            icon: <User className="w-6 h-6" />,
             content: (
                 <div className="flex flex-col gap-3 text-md text-gray-700 ">
                     <div><strong className="text-blue-600 ">Age:</strong> {patient.age}</div>
@@ -40,17 +40,21 @@ const Demographics = ({ patientId }) => {
         },
         {
             title: 'Medical',
-            icon: <Clipboard className="w-6 h-6" />, 
+            icon: <Clipboard className="w-6 h-6" />,
             content: (
                 <div className="space-y-4 text-sm text-gray-700">
                     <div>
-                        <strong className="text-blue-600 block mb-2">Primary Condition</strong>
-                        <p className="bg-blue-50 p-3 rounded-md">{patient.primaryCondition}</p>
+                        <strong className="px-2 pt-2 text-blue-600 bg-blue-50 inline-block rounded-t-md -rounded-br-md">
+                            Primary Condition
+                        </strong>
+                        <p className="bg-blue-50 px-4 pb-3 rounded-md rounded-tl-none">{patient.primaryCondition}</p>
                     </div>
-                    {patient.secondaryConditions.length > 0 && 
+                    {patient.secondaryConditions.length > 0 &&
                         <div>
-                            <strong className="text-blue-600 block mb-2">Secondary Conditions</strong>
-                            <p className="bg-blue-50 p-3 rounded-md">
+                            <strong className="px-2 pt-2 text-blue-600 bg-blue-50 inline-block rounded-t-md -rounded-br-md">
+                                Secondary Condition
+                            </strong>
+                            <p className="bg-blue-50 px-3 pb-3 rounded-md rounded-tl-none ">
                                 {patient.secondaryConditions.join(', ')}
                             </p>
                         </div>
@@ -60,11 +64,11 @@ const Demographics = ({ patientId }) => {
         },
         {
             title: 'Vitals',
-            icon: <HeartPulse className="w-6 h-6" />, 
+            icon: <HeartPulse className="w-6 h-6" />,
             content: (
-                <div className="grid grid-cols-2 gap-4 text-sm text-gray-700">
+                <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
                     {Object.entries(patient.vitals).map(([key, value]) => (
-                        <div key={key} className="bg-blue-50 p-3 rounded-lg text-center">
+                        <div key={key} className="bg-blue-50 p-2 rounded-lg text-center">
                             <strong className="text-blue-600 block mb-1 text-xs uppercase">
                                 {key.replace(/([A-Z])/g, ' $1').toUpperCase()}
                             </strong>
@@ -106,9 +110,8 @@ const Demographics = ({ patientId }) => {
                         <button
                             key={index}
                             onClick={() => setActivePage(index)}
-                            className={`w-3 h-3 rounded-full transition-colors ${
-                                activePage === index ? 'bg-blue-500 w-5' : 'bg-gray-300'
-                            }`}
+                            className={`w-3 h-3 rounded-full transition-colors ${activePage === index ? 'bg-blue-500 w-5' : 'bg-gray-300'
+                                }`}
                         />
                     ))}
                 </div>
@@ -121,11 +124,10 @@ const Demographics = ({ patientId }) => {
                 {pages.map((page, index) => (
                     <div
                         key={index}
-                        className={`absolute inset-0 transition-all duration-300 ease-in-out ${
-                            activePage === index 
-                                ? 'opacity-100 translate-x-0' 
-                                : 'opacity-0 translate-x-full'
-                        }`}
+                        className={`absolute inset-0 transition-all duration-300 ease-in-out ${activePage === index
+                            ? 'opacity-100 translate-x-0'
+                            : 'opacity-0 translate-x-full'
+                            }`}
                     >
                         <div className="flex items-center mb-3 text-blue-600">
                             {page.icon}

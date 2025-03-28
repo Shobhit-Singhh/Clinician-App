@@ -371,7 +371,11 @@ const Reports = ({ patientId }) => {
     };
 
     if (!patient) {
-        return <div>Select a patient</div>;
+        return (
+            <div className="h-full bg-white rounded-lg shadow-sm flex items-center justify-center">
+                <p className="text-gray-500 text-sm font-semibold">Select a patient</p>
+            </div>
+        );
     }
 
     return (
@@ -419,7 +423,7 @@ const Reports = ({ patientId }) => {
                     </button>
                 </div>
 
-                <div className="flex flex-col space-y-4 overflow-y-auto max-h-[390px] p-4">
+                <div className="flex flex-col space-y-4 overflow-y-auto max-h-[390px] py-2">
 
                     {activeTab === 'diagnosis' && renderDiagnosisTab()}
                     {activeTab === 'medicalHistory' && renderMedicalHistoryTab()}

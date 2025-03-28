@@ -74,11 +74,7 @@ const PatientList = ({ onPatientSelect }) => {
                                 : 'hover:bg-gray-50'}
                         `}
                     >
-                        <img
-                            src={patient.image}
-                            alt={patient.name}
-                            className="w-10 h-10 rounded-full mr-3 object-cover"
-                        />
+                        <img src={patient.image} alt={patient.name} className="w-10 h-10 rounded-full mr-3 object-cover"/>
                         <div className="flex-grow">
                             <div className="text-sm font-medium truncate">{patient.name}</div>
                             <div className="flex space-x-1 mt-1">
@@ -113,9 +109,9 @@ const PatientList = ({ onPatientSelect }) => {
             </div>
 
             {/* Add Tag Section */}
-            <div className="absolute bottom-0 left-0 w-full bg-white border-t shadow-md p-2">
+            <div className="absolute bottom-0 left-0 w-full bg-white border-t shadow-md p-2 rounded-md">
                 <div
-                    className="flex items-center justify-between cursor-pointer"
+                    className="flex items-center justify-between cursor-pointer "
                     onClick={() => setIsAddTagExpanded(!isAddTagExpanded)}
                 >
                     <h3 className="text-sm font-semibold">Add Tags</h3>

@@ -55,7 +55,7 @@ const LeftNavBar = ({ isCollapsed, onToggleCollapse }) => {
         className="flex items-center justify-left p-3 border-b border-neutral-700 w-full "
       >
         <div className="flex items-center">
-          <img src="/data/assets/logo_1.png" className="w-10 h-10" />
+          <img src="/assets/logo_1.png" className="w-10 h-10" />
           {!isCollapsed && (
             <span className="ml-2 text-3xl font-display font-bold text-white">Neoptio</span>
           )}

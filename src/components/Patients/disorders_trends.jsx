@@ -8,17 +8,26 @@ import {
     ResponsiveContainer,
     Legend
 } from 'recharts';
+import { ChevronDown, Check } from 'lucide-react';
 import patientsData from '/data/patient.json';
-import { BarChart } from 'lucide-react';
 
 const DisordersTrends = ({ patientId }) => {
     const [patient, setPatient] = useState(null);
+    const [selectedDisorders, setSelectedDisorders] = useState([]);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     useEffect(() => {
         const foundPatient = patientId
             ? patientsData.patients.find(p => p.id === patientId)
             : null;
         setPatient(foundPatient);
+        
+        // Initially select all disorders
+        if (foundPatient && foundPatient.disorders) {
+            setSelectedDisorders(
+                foundPatient.disorders.map(disorder => disorder.disorder)
+            );
+        }
     }, [patientId]);
 
     const disorders = patient?.disorders || [];
@@ -51,10 +60,27 @@ const DisordersTrends = ({ patientId }) => {
         });
     }, [disorders]);
 
+    const toggleDisorderSelection = (disorder) => {
+        setSelectedDisorders(prev => 
+            prev.includes(disorder)
+                ? prev.filter(d => d !== disorder)
+                : [...prev, disorder]
+        );
+    };
+
+    const isAllSelected = selectedDisorders.length === disorders.length;
+    const toggleSelectAll = () => {
+        setSelectedDisorders(
+            isAllSelected 
+                ? [] 
+                : disorders.map(disorder => disorder.disorder)
+        );
+    };
+
     if (!patient) {
         return (
-            <div className="h-full bg-white/90 rounded-lg shadow-sm flex items-center justify-center">
-                <p className="text-gray-500 text-sm">Select a patient</p>
+            <div className="h-full bg-white rounded-lg shadow-sm flex items-center justify-center">
+                <p className="text-gray-500 text-sm font-semibold">Select a patient</p>
             </div>
         );
     }
@@ -68,11 +94,63 @@ const DisordersTrends = ({ patientId }) => {
     }
 
     return (
-        <div className=" rounded-lg h-[235px] p-2">
-            <div className="h-full w-full ">
+        <div className="rounded-lg">
+            <div className="flex justify-between items-center pb-3 border-b">
+                <h3 className="text-sm font-semibold text-gray-700">Primary Disorder Trends</h3>
+                
+                {/* Multi-Select Dropdown */}
+                <div className="relative">
+                    <button 
+                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                        className="flex items-center justify-between w-48 px-3 py-1 border rounded-md text-sm"
+                    >
+                        <span>
+                            {selectedDisorders.length === disorders.length 
+                                ? 'All Disorders' 
+                                : `${selectedDisorders.length} Selected`}
+                        </span>
+                        <ChevronDown size={16} />
+                    </button>
 
-                <h3 className="text-sm font-semibold text-gray-700 pb-3 border-b">Primary Disorder Trends</h3>
-                <ResponsiveContainer width="100%" height="90%">
+                    {isDropdownOpen && (
+                        <div className="absolute right-0 mt-1 w-48 bg-white border rounded-md shadow-lg z-10">
+                            {/* Select All Option */}
+                            <div 
+                                onClick={toggleSelectAll}
+                                className="px-3 py-2 hover:bg-gray-100 flex items-center cursor-pointer"
+                            >
+                                <input 
+                                    type="checkbox" 
+                                    checked={isAllSelected}
+                                    readOnly
+                                    className="mr-2"
+                                />
+                                <span>Select All</span>
+                            </div>
+
+                            {/* Individual Disorder Options */}
+                            {disorders.map(disorder => (
+                                <div 
+                                    key={disorder.disorder}
+                                    onClick={() => toggleDisorderSelection(disorder.disorder)}
+                                    className="px-3 py-2 hover:bg-gray-100 flex items-center cursor-pointer"
+                                >
+                                    <input 
+                                        type="checkbox" 
+                                        checked={selectedDisorders.includes(disorder.disorder)}
+                                        readOnly
+                                        className="mr-2"
+                                    />
+                                    <span>{disorder.disorder}</span>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            </div>
+
+            <div className="h-[150px] w-full">
+                <ResponsiveContainer width="100%" height="130%">
                     <LineChart
                         data={chartData}
                         margin={{ top: 10, right: 10, left: -15, bottom: 0 }}
@@ -106,17 +184,20 @@ const DisordersTrends = ({ patientId }) => {
                             }}
                         />
 
-                        {disorders.map(disorder => (
-                            <Line
-                                key={disorder.disorder}
-                                type="monotone"
-                                dataKey={disorder.disorder}
-                                stroke={generateColorPalette[disorder.disorder]}
-                                strokeWidth={2}
-                                dot={false}
-                                activeDot={{ r: 4 }}
-                            />
-                        ))}
+                        {disorders
+                            .filter(disorder => selectedDisorders.includes(disorder.disorder))
+                            .map(disorder => (
+                                <Line
+                                    key={disorder.disorder}
+                                    type="monotone"
+                                    dataKey={disorder.disorder}
+                                    stroke={generateColorPalette[disorder.disorder]}
+                                    strokeWidth={2}
+                                    dot={false}
+                                    activeDot={{ r: 4 }}
+                                />
+                            ))
+                        }
                     </LineChart>
                 </ResponsiveContainer>
             </div>

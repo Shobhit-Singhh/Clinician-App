@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+
 import {
     Bell,
     AlertCircle,
@@ -70,8 +71,8 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
                 {[...Array(31)].map((_, i) => (
                     <motion.div
                         key={i}
-                        whileHover={{ 
-                            scale: 1.1, 
+                        whileHover={{
+                            scale: 1.1,
                             backgroundColor: '#F0F0F0',
                             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                         }}
@@ -100,9 +101,14 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
         >
             {/* Company Logo and Name - Only show when nav is collapsed */}
             {isNavCollapsed && (
-                <div className="flex items-center mr-6 -ml-3 animate-fade-in">
+                <motion.div
+                    className="flex items-center mr-6 -ml-3"
+                    initial={{ x: -200, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                >
                     <span className="text-[30px] font-display font-bold text-primary">Neoptio</span>
-                </div>
+                </motion.div>
             )}
 
             {/* Search Bar */}
@@ -139,8 +145,8 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
                     onMouseEnter={() => setIsAlertHovered(true)}
                     onMouseLeave={() => setIsAlertHovered(false)}
                 >
-                    <motion.div 
-                        whileHover={{ 
+                    <motion.div
+                        whileHover={{
                             scale: 1.1,
                             rotate: [0, -10, 10, -10, 0]
                         }}
@@ -171,11 +177,11 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
                     onMouseEnter={() => setIsNotificationHovered(true)}
                     onMouseLeave={() => setIsNotificationHovered(false)}
                 >
-                    <motion.div 
-                        whileHover={{ 
+                    <motion.div
+                        whileHover={{
                             scale: 1.1,
                             rotate: [0, -10, 10, -10, 0]
-                        }} 
+                        }}
                         className="relative cursor-pointer"
                     >
                         <Bell className="text-neutral-600 group-hover:text-neutral-800 transition-colors" size={24} />
@@ -202,8 +208,8 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
                                         "Pending assessment review",
                                         "Upcoming appointment"
                                     ].map((notification, index) => (
-                                        <div 
-                                            key={index} 
+                                        <div
+                                            key={index}
                                             className="text-sm text-neutral-600 hover:bg-neutral-50 p-2 rounded-md transition-colors"
                                         >
                                             {notification}
@@ -258,7 +264,7 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
                     >
                         <span className="mr-2 text-sm font-medium text-neutral-700">Dr. Smith</span>
                         <img src="/assets/Doc.png" className="w-10 h-10 rounded-md object-cover" />
-                        
+
                     </motion.button>
                     <AnimatePresence>
                         {isProfileDropdownOpen && (
@@ -270,24 +276,24 @@ const TopNavbar = ({ isNavCollapsed, onSearch }) => {
                             >
                                 <div className="py-2">
                                     {[
-                                        { 
-                                            icon: <UserCircle size={20} />, 
-                                            text: 'Profile', 
-                                            color: 'text-neutral-700' 
+                                        {
+                                            icon: <UserCircle size={20} />,
+                                            text: 'Profile',
+                                            color: 'text-neutral-700'
                                         },
-                                        { 
-                                            icon: <Settings size={20} />, 
-                                            text: 'Settings', 
-                                            color: 'text-neutral-700' 
+                                        {
+                                            icon: <Settings size={20} />,
+                                            text: 'Settings',
+                                            color: 'text-neutral-700'
                                         },
-                                        { 
-                                            icon: <LogOut size={20} />, 
-                                            text: 'Logout', 
-                                            color: 'text-secondary' 
+                                        {
+                                            icon: <LogOut size={20} />,
+                                            text: 'Logout',
+                                            color: 'text-secondary'
                                         }
                                     ].map((item, index) => (
-                                        <button 
-                                            key={index} 
+                                        <button
+                                            key={index}
                                             className={`
                                                 flex items-center 
                                                 w-full px-4 py-2.5 

@@ -1,0 +1,349 @@
+{
+    "kpis": {
+        "totalPatients": 1245,
+        "totalAssessments": 3672,
+        "totalAppointments": 512,
+        "activeTherapists": 42,
+        "completedTreatments": 287,
+        "averageTreatmentDuration": 6.5,
+        "newPatientReferrals": 76,
+        "cancelationRate": 12.3
+    },
+    "patientMessageList": [
+        {
+            "patientId": "1",
+            "name": "Emily Rodriguez",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I'm feeling much better this week.",
+            "lastMessageTime": "2024-03-28T10:45:22Z",
+            "unreadCount": 3,
+            "isPinned": true,
+            "status": "Active Treatment",
+            "priority": "High"
+        },
+        {
+            "patientId": "2",
+            "name": "Michael Chen",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "Can we reschedule my next appointment?",
+            "lastMessageTime": "2024-03-27T15:22:11Z",
+            "unreadCount": 1,
+            "isPinned": false,
+            "status": "Initial Consultation",
+            "priority": "Medium"
+        },
+        {
+            "patientId": "3",
+            "name": "Sarah Thompson",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I missed my medication this week.",
+            "lastMessageTime": "2024-03-26T09:12:33Z",
+            "unreadCount": 0,
+            "isPinned": false,
+            "status": "Follow-up Care",
+            "priority": "Low"
+        },
+        {
+            "patientId": "4",
+            "name": "David Johnson",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I have a question about my treatment plan.",
+            "lastMessageTime": "2024-03-25T14:30:45Z",
+            "unreadCount": 2,
+            "isPinned": false,
+            "status": "Active Treatment",
+            "priority": "High"
+        },
+        {
+            "patientId": "5",
+            "name": "Jessica Lee",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I need to talk about my anxiety.",
+            "lastMessageTime": "2024-03-24T11:15:00Z",
+            "unreadCount": 0,
+            "isPinned": false,
+            "status": "Initial Consultation",
+            "priority": "Medium"
+        },
+        {
+            "patientId": "6",
+            "name": "Robert Brown",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I have a follow-up question.",
+            "lastMessageTime": "2024-03-23T16:45:12Z",
+            "unreadCount": 0,
+            "isPinned": false,
+            "status": "Follow-up Care",
+            "priority": "Low"
+        },
+        {
+            "patientId": "7",
+            "name": "Linda Garcia",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I need to reschedule my appointment.",
+            "lastMessageTime": "2024-03-22T13:30:00Z",
+            "unreadCount": 0,
+            "isPinned": false,
+            "status": "Active Treatment",
+            "priority": "High"
+        },
+        {
+            "patientId": "8",
+            "name": "James Wilson",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I have a question about my medication.",
+            "lastMessageTime": "2024-03-21T12:00:00Z",
+            "unreadCount": 0,
+            "isPinned": false,
+            "status": "Initial Consultation",
+            "priority": "Medium"
+        },
+        {
+            "patientId": "9",
+            "name": "Patricia Martinez",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I need to discuss my treatment plan.",
+            "lastMessageTime": "2024-03-20T10:00:00Z",
+            "unreadCount": 0,
+            "isPinned": false,
+            "status": "Follow-up Care",
+            "priority": "Low"
+        },
+        {
+            "patientId": "10",
+            "name": "Charles Anderson",
+            "profileImage": "/api/placeholder/100/100",
+            "lastMessage": "I have a question about my therapy.",
+            "lastMessageTime": "2024-03-19T09:30:00Z",
+            "unreadCount": 0,
+            "isPinned": false,
+            "status": "Active Treatment",
+            "priority": "High"
+        }
+    ],
+    "recentAssessments": [
+        {
+            "assessmentId": "A001",
+            "name": "Anxiety Disorder Screening",
+            "category": "Mental Health",
+            "summary": "Comprehensive anxiety level assessment",
+            "assignedPatient": "Emily Rodriguez",
+            "patientId": "P001",
+            "dateOfAppointment": "2024-03-15",
+            "dateOfCompletion": "2024-03-22",
+            "completionPercentage": 95,
+            "therapist": "Dr. Julia Martinez",
+            "recommendedInterventions": [
+                "Cognitive Behavioral Therapy",
+                "Stress Management Techniques"
+            ],
+            "riskLevel": "Moderate"
+        },
+        {
+            "assessmentId": "A002",
+            "name": "Depression Evaluation",
+            "category": "Mental Health",
+            "summary": "Initial depression diagnostic screening",
+            "assignedPatient": "Michael Chen",
+            "patientId": "P002",
+            "dateOfAppointment": "2024-03-10",
+            "dateOfCompletion": "2024-03-18",
+            "completionPercentage": 85,
+            "therapist": "Dr. David Kim",
+            "recommendedInterventions": [
+                "Talk Therapy",
+                "Medication Consultation"
+            ],
+            "riskLevel": "High"
+        },
+        {
+            "assessmentId": "A001",
+            "name": "Anxiety Disorder Screening",
+            "category": "Mental Health",
+            "summary": "Comprehensive anxiety level assessment",
+            "assignedPatient": "Emily Rodriguez",
+            "patientId": "P001",
+            "dateOfAppointment": "2024-03-15",
+            "dateOfCompletion": "2024-03-22",
+            "completionPercentage": 95,
+            "therapist": "Dr. Julia Martinez",
+            "recommendedInterventions": [
+                "Cognitive Behavioral Therapy",
+                "Stress Management Techniques"
+            ],
+            "riskLevel": "Moderate"
+        },
+        {
+            "assessmentId": "A002",
+            "name": "Depression Evaluation",
+            "category": "Mental Health",
+            "summary": "Initial depression diagnostic screening",
+            "assignedPatient": "Michael Chen",
+            "patientId": "P002",
+            "dateOfAppointment": "2024-03-10",
+            "dateOfCompletion": "2024-03-18",
+            "completionPercentage": 85,
+            "therapist": "Dr. David Kim",
+            "recommendedInterventions": [
+                "Talk Therapy",
+                "Medication Consultation"
+            ],
+            "riskLevel": "High"
+        }
+    ],
+    "weeklyCalendar": [
+        {
+            "appointmentId": "APT001",
+            "date": "2024-03-29",
+            "time": "10:00 AM",
+            "patientName": "Emily Rodriguez",
+            "patientId": "P001",
+            "disorders": [
+                "Generalized Anxiety Disorder"
+            ],
+            "therapist": "Dr. Julia Martinez",
+            "notes": "Follow-up session, discuss CBT progress",
+            "duration": 50,
+            "status": "Scheduled"
+        },
+        {
+            "appointmentId": "APT002",
+            "date": "2024-03-30",
+            "time": "2:30 PM",
+            "patientName": "Michael Chen",
+            "patientId": "P002",
+            "disorders": [
+                "Major Depressive Disorder"
+            ],
+            "therapist": "Dr. David Kim",
+            "notes": "Initial medication consultation",
+            "duration": 60,
+            "status": "Pending Confirmation"
+        },
+        {
+            "appointmentId": "APT003",
+            "date": "2024-04-01",
+            "time": "11:15 AM",
+            "patientName": "Sarah Thompson",
+            "patientId": "P003",
+            "disorders": [
+                "Social Anxiety",
+                "PTSD"
+            ],
+            "therapist": "Dr. Elena Rodriguez",
+            "notes": "Trauma-informed care session",
+            "duration": 45,
+            "status": "Confirmed"
+        }
+    ],
+    "highRiskAlerts": [
+        {
+            "alertId": "HR001",
+            "patientName": "Michael Chen",
+            "patientId": "P002",
+            "riskCategory": "Suicide Risk",
+            "severityLevel": "High",
+            "dateIdentified": "2024-03-25",
+            "lastAssessment": {
+                "assessmentType": "Anxiety",
+                "score": 78,
+                "interpretation": "Severe Anxiety"
+            },
+            "diagnosis": {
+                "primaryCondition": "Suicidal Thoughts",
+                "detailedObservation": "Patient has expressed persistent suicidal ideation. High-risk factors detected.",
+                "clinicalNotes": "Patient reported feelings of hopelessness and intent to self-harm. Immediate intervention required."
+            },
+            "recommendations": {
+                "immediateAction": "Initiate emergency psychiatric evaluation.",
+                "therapyReferral": "Refer to a licensed clinical psychologist.",
+                "medicationReview": "Consult psychiatrist for potential antidepressant treatment.",
+                "supportResources": [
+                    "24/7 Crisis Helpline: 988",
+                    "Local Suicide Prevention Center"
+                ]
+            }
+        },
+        {
+            "alertId": "HR002",
+            "patientName": "Sophia Martinez",
+            "patientId": "P005",
+            "riskCategory": "Severe Depression",
+            "severityLevel": "Critical",
+            "dateIdentified": "2024-03-26",
+            "lastAssessment": {
+                "assessmentType": "Depression Scale",
+                "score": 85,
+                "interpretation": "Major Depressive Disorder (Severe)"
+            },
+            "diagnosis": {
+                "primaryCondition": "Severe Depression",
+                "detailedObservation": "Patient shows persistent sadness, lack of motivation, and social withdrawal.",
+                "clinicalNotes": "Patient reported fatigue, difficulty concentrating, and loss of appetite. Expressed feelings of worthlessness."
+            },
+            "recommendations": {
+                "immediateAction": "Emergency psychiatric consultation required.",
+                "therapyReferral": "Schedule intensive cognitive behavioral therapy (CBT).",
+                "medicationReview": "Consult psychiatrist for potential SSRI treatment.",
+                "supportResources": [
+                    "National Depression Helpline: 1-800-662-HELP",
+                    "Local Mental Health Support Group"
+                ]
+            }
+        },
+        {
+            "alertId": "HR003",
+            "patientName": "James Robinson",
+            "patientId": "P010",
+            "riskCategory": "PTSD Risk",
+            "severityLevel": "Moderate",
+            "dateIdentified": "2024-03-27",
+            "lastAssessment": {
+                "assessmentType": "PTSD Checklist",
+                "score": 65,
+                "interpretation": "Moderate PTSD Symptoms"
+            },
+            "diagnosis": {
+                "primaryCondition": "Post-Traumatic Stress Disorder",
+                "detailedObservation": "Patient reported frequent nightmares, flashbacks, and heightened anxiety in crowded spaces.",
+                "clinicalNotes": "Patient experienced a traumatic event six months ago. Avoids social situations and shows signs of emotional detachment."
+            },
+            "recommendations": {
+                "immediateAction": "Schedule trauma-focused therapy (EMDR or CBT).",
+                "therapyReferral": "Refer to a licensed trauma therapist.",
+                "medicationReview": "Consider prescribing SSRIs or anti-anxiety medication.",
+                "supportResources": [
+                    "Veterans Crisis Line: 1-800-273-8255",
+                    "Local PTSD Support Group"
+                ]
+            }
+        },
+        {
+            "alertId": "HR004",
+            "patientName": "Olivia Patel",
+            "patientId": "P015",
+            "riskCategory": "Bipolar Disorder",
+            "severityLevel": "High",
+            "dateIdentified": "2024-03-28",
+            "lastAssessment": {
+                "assessmentType": "Mood Disorder Questionnaire",
+                "score": 82,
+                "interpretation": "Severe Bipolar Symptoms"
+            },
+            "diagnosis": {
+                "primaryCondition": "Bipolar Disorder (Manic Episode)",
+                "detailedObservation": "Patient exhibits extreme mood swings, impulsive behavior, and decreased need for sleep.",
+                "clinicalNotes": "Current episode characterized by hyperactivity, racing thoughts, and risky financial decisions."
+            },
+            "recommendations": {
+                "immediateAction": "Stabilize mood with psychiatric intervention.",
+                "therapyReferral": "Enroll in a structured mood stabilization program.",
+                "medicationReview": "Review lithium or mood stabilizer prescriptions.",
+                "supportResources": [
+                    "Bipolar Disorder Helpline: 1-800-662-HELP",
+                    "Peer Support Network"
+                ]
+            }
+        }
+    ]
+}

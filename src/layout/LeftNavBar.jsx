@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from "framer-motion";
 import {
   LayoutDashboard,
   ClipboardList,
@@ -8,6 +7,7 @@ import {
   Stethoscope,
   BookOpen
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const LeftNavBar = ({ isCollapsed, onToggleCollapse }) => {
@@ -54,8 +54,8 @@ const LeftNavBar = ({ isCollapsed, onToggleCollapse }) => {
         onClick={onToggleCollapse}
         className="flex items-center justify-left p-3 border-b border-neutral-700 w-full "
       >
-        <div className="flex items-center justify-center">
-          <img src="/assets/logo_1.png" className="w-10 h-10 " />
+        <div className="flex items-center">
+          <img src="/assets/logo_1.png" className="w-10 h-10" />
           {!isCollapsed && (
             <motion.span
               className="ml-2 text-3xl font-display font-bold text-white px-3"

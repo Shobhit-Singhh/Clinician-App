@@ -43,7 +43,7 @@ const PatientMessage = ({ patientId }) => {
     }
 
     return (
-        <div className=" rounded-lg h-full flex flex-col">
+        <div className=" rounded-lg h-[410px] mb-3 flex flex-col">
             <div className="flex justify-between items-center border-b py-3">
                 <h3 className="text-sm font-semibold text-gray-700">
                     Chat with {patient.name}

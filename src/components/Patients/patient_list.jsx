@@ -99,10 +99,10 @@ const PatientList = ({ onPatientSelect }) => {
                             }}
                             className={`
                                 p-1 rounded-full
-                                ${patient.pinned ? 'text-yellow-500' : 'text-gray-300'}
+                                ${patient.pinned ? 'text-blue-500' : 'text-gray-300'}
                             `}
                         >
-                            <Pin size={16} fill={patient.pinned ? 'currentColor' : 'none'} />
+                            <Pin size={15} fill={patient.pinned ? 'currentColor' : 'none'} />
                         </button>
                     </div>
                 ))}

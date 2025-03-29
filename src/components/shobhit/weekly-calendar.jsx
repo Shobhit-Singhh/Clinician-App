@@ -51,13 +51,13 @@ const WeeklyCalendar = () => {
   );
 
   return (
-    <div className="bg-white rounded-lg pb-4 h-[320px]">
-      <div className="flex items-center pb-2 border-b">
+    <div className="bg-white rounded-lg pb-4 h-[330px]">
+      <div className="flex items-center pb-2">
         <Calendar size={24} className="mr-2 text-blue-500" />
         <h2 className="text-xl font-semibold text-gray-800">Weekly Schedule</h2>
       </div>
 
-      <div className="max-h-[280px] overflow-y-auto h-full">
+      <div className="max-h-[330px] overflow-y-auto h-full border-y">
         {sortedDates.map((date) => {
           const formattedDate = new Date(date).toLocaleDateString('en-US', {
             weekday: 'long', 
@@ -67,7 +67,7 @@ const WeeklyCalendar = () => {
 
           return (
             <div key={date} className="mb-6">
-              <div className="text-sm font-semibold text-gray-600 mb-3 border-b pb-2">
+              <div className="text-sm font-semibold text-gray-600 m-2 pb-2">
                 {formattedDate}
               </div>
 

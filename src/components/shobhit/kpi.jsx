@@ -10,7 +10,7 @@ import mockData from '../../../data/doc.json';
 
 const KPICard = ({ title, icon: Icon, color, value, subtext }) => {
   return (
-    <div className={`flex-shrink-0 w-full max-w-[225px] h-full bg-white border rounded-lg p-4 text-xs shadow-sm hover:shadow-md transition-all`}>
+    <div className={`flex-shrink-0 w-full max-w-[216px] h-full bg-white border rounded-lg p-4 text-xs shadow-sm hover:shadow-md transition-all`}>
       <div className={`flex items-baseline mb-2 text-${color}-600 font-bold`}>
         <Icon size={16} className="mr-2" />
         {title}

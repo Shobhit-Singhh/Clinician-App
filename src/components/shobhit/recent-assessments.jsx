@@ -92,12 +92,12 @@ const RecentAssessments = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-sm h-[320px] ">
-      <div className="flex items-center pb-2 border-b">
+      <div className="flex items-center pb-2 ">
         <FileText size={24} className="mr-2 text-blue-500 " />
         <h2 className="text-xl font-semibold text-gray-800 ">Recent Assessments</h2>
       </div>
 
-      <div className="max-h-[280px] overflow-y-auto">
+      <div className="h-[314px] overflow-y-auto border-y">
         {recentAssessments.map((assessment, index) => (
           <AssessmentCard 
             key={assessment.assessmentId || index} 

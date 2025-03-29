@@ -47,7 +47,7 @@ const Dashboard = () => {
       </div>
 
       {/* Patient Message List - Vertical Column on Right w-1/5 */}
-      <div className="w-1/5 h-full bg-white rounded-2xl shadow-lg p-4">
+      <div className="w-3/8 h-full bg-white rounded-2xl shadow-lg p-4">
         <PatientMessageList 
           onPatientSelect={handlePatientSelect} 
           selectedPatientId={selectedPatientId}

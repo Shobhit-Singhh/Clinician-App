@@ -130,7 +130,7 @@ const HighRiskAlerts = () => {
 
   return (
     <div className="bg-white rounded-lg">
-      <div className="flex items-center pb-2 border-b">
+      <div className="flex items-center pb-2">
         <AlertTriangle size={24} className="mr-2 text-red-500" />
         <h2 className="text-xl font-semibold text-gray-800">High-Risk Alerts</h2>
         <div className="ml-auto text-xs text-gray-500">
@@ -138,7 +138,7 @@ const HighRiskAlerts = () => {
         </div>
       </div>
 
-      <div className="max-h-[300px] overflow-y-auto">
+      <div className="h-[315px] overflow-y-auto border-y">
         {alerts.length === 0 ? (
           <div className="text-center text-gray-500 py-8">
             No high-risk alerts at the moment

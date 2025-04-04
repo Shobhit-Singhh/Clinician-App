@@ -7,9 +7,6 @@ export default {
   theme: {
     extend: {
       // Custom breakpoints based on modern device sizes
-      
-      
-
       colors: {
         primary: {
           DEFAULT: '#1754C3',   // Orange from CTA buttons

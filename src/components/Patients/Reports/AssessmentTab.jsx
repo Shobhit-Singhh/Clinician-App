@@ -1,7 +1,25 @@
-import React from 'react';
-import { ChevronDown, ChevronRight, Check, X, AlertTriangle } from 'lucide-react';
+import React, { useState } from 'react';
+import { ChevronDown, ChevronRight, Check, X, AlertTriangle, XCircle } from 'lucide-react';
 
 const AssessmentTab = ({ patient, openSections, toggleSection }) => {
+    // Add state for popup control
+    const [showAssessmentPopup, setShowAssessmentPopup] = useState(false);
+    const [selectedAssessmentLog, setSelectedAssessmentLog] = useState(null);
+    const [selectedDisorderIndex, setSelectedDisorderIndex] = useState(null);
+
+    // Function to open popup with specific log
+    const openAssessmentPopup = (disorderIndex, log) => {
+        setSelectedAssessmentLog(log);
+        setSelectedDisorderIndex(disorderIndex);
+        setShowAssessmentPopup(true);
+    };
+
+    // Function to close popup
+    const closeAssessmentPopup = () => {
+        setShowAssessmentPopup(false);
+        setSelectedAssessmentLog(null);
+    };
+
     // Check if assessment data exists in the SOAP object
     const hasAssessmentData = patient?.soap?.assessment?.diagnoses?.length > 0;
 
@@ -184,102 +202,31 @@ const AssessmentTab = ({ patient, openSections, toggleSection }) => {
                                 </div>
                             )}
 
-                            {/* Assessment Log */}
-                            {disorder.assessmentLog && (
+                            {/* Assessment History Preview (Just list items with clickable links) */}
+                            {disorder.assessmentLog && disorder.assessmentLog.length > 0 && (
                                 <div className="mt-4">
                                     <h3 className="text-md font-semibold text-purple-700 mb-3">Assessment History</h3>
-                                    <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
-                                        {disorder.assessmentLog.map((log, logIndex) => (
-                                            <div
-                                                key={logIndex}
-                                                className="border border-gray-200 rounded-lg shadow-sm"
-                                            >
-                                                {/* Log Header */}
-                                                <div className="bg-gray-50 p-3 rounded-t-lg border-b border-gray-200">
-                                                    <div className="flex justify-between items-center">
-                                                        <span className="font-medium text-gray-700">
-                                                            {new Date(log.date).toLocaleDateString()} - {log.assessmentMethod}
-                                                        </span>
-                                                        <div className="flex space-x-2">
-                                                            <button
-                                                                className="hover:bg-green-100 p-1 rounded-full transition-all"
-                                                                title="Validate Assessment"
-                                                            >
-                                                                <Check size={16} className="text-green-600" />
-                                                            </button>
-                                                            <button
-                                                                className="hover:bg-red-100 p-1 rounded-full transition-all"
-                                                                title="Flag Assessment"
-                                                            >
-                                                                <X size={16} className="text-red-600" />
-                                                            </button>
-                                                            <button
-                                                                className="text-sm text-blue-500 hover:bg-gray-200 p-1 rounded-full transition-all"
-                                                                onClick={(e) => {
-                                                                    e.stopPropagation();
-                                                                    toggleSection(`assessment_log_${index}_${logIndex}`);
-                                                                }}
-                                                                title={openSections[`assessment_log_${index}_${logIndex}`] ? "Hide Details" : "Show Details"}
-                                                            >
-                                                                {openSections[`assessment_log_${index}_${logIndex}`] ?
-                                                                    <ChevronDown size={16} className="text-purple-500" /> :
-                                                                    <ChevronRight size={16} className="text-purple-500" />
-                                                                }
-                                                            </button>
+                                    <div className="bg-gray-50 p-3 rounded-lg">
+                                        <ul className="divide-y divide-gray-200">
+                                            {disorder.assessmentLog.map((log, logIndex) => (
+                                                <li key={logIndex} className="py-2">
+                                                    <div 
+                                                        className="flex items-center cursor-pointer hover:bg-gray-100 p-2 rounded-lg"
+                                                        onClick={() => openAssessmentPopup(index, log)}
+                                                    >
+                                                        <div className="flex-1">
+                                                            <p className="font-medium text-gray-700">
+                                                                {new Date(log.date).toLocaleDateString()} - {log.assessmentMethod}
+                                                            </p>
+                                                            <p className="text-sm text-gray-600 truncate">{log.interpretation}</p>
+                                                        </div>
+                                                        <div className="ml-2 text-purple-500">
+                                                            <ChevronRight size={16} />
                                                         </div>
                                                     </div>
-                                                    <p className="mt-2 text-sm text-gray-600">{log.interpretation}</p>
-                                                </div>
-
-                                                {openSections[`assessment_log_${index}_${logIndex}`] && (
-                                                    <div className="p-3">
-
-                                                        {/* AI Assessment section */}
-                                                        {log.aiAssessment && (
-                                                            <div className="mb-3">
-                                                                <span className="font-semibold">AI Assessment:</span> {log.aiAssessment}
-                                                            </div>
-                                                        )}
-
-                                                        {/* Key Indicators section */}
-                                                        {log.keyIndicators && log.keyIndicators.length > 0 && (
-                                                            <div className="mb-3">
-                                                                <span className="font-semibold">Key Indicators:</span>
-                                                                <div className="flex flex-wrap gap-2 mt-1">
-                                                                    {log.keyIndicators.map((indicator, idx) => (
-                                                                        <span key={idx} className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">
-                                                                            {indicator}
-                                                                        </span>
-                                                                    ))}
-                                                                </div>
-                                                            </div>
-                                                        )}
-
-                                                        <h4 className="font-medium text-purple-700 mb-2">Conversation Log:</h4>
-                                                        <div className="max-h-[300px] overflow-y-auto bg-gray-50 rounded-lg p-3 space-y-2">
-                                                            {log.conversation.map((message) => (
-                                                                <div
-                                                                    key={message.id}
-                                                                    className={`flex mb-2 ${message.sender === "AI" ? "justify-start" : "justify-end"}`}
-                                                                >
-                                                                    <div
-                                                                        className={`p-2 rounded-lg max-w-[80%] ${message.sender === "AI"
-                                                                                ? "bg-purple-100 text-purple-900"
-                                                                                : "bg-blue-100 text-blue-900"
-                                                                            }`}
-                                                                    >
-                                                                        {message.text}
-                                                                        <div className="text-xs text-gray-500 mt-1">
-                                                                            {new Date(message.timestamp).toLocaleString()}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            ))}
-                                                        </div>
-                                                    </div>
-                                                )}
-                                            </div>
-                                        ))}
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
                             )}
@@ -344,6 +291,104 @@ const AssessmentTab = ({ patient, openSections, toggleSection }) => {
                             </div>
                         </div>
                     )}
+                </div>
+            )}
+
+            {/* Assessment History Popup */}
+            {showAssessmentPopup && selectedAssessmentLog && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white rounded-lg w-11/12 max-w-4xl max-h-[90vh] overflow-hidden flex flex-col">
+                        {/* Popup Header */}
+                        <div className="bg-purple-600 text-white p-4 flex justify-between items-center">
+                            <h3 className="font-semibold">
+                                Assessment History - {diagnoses[selectedDisorderIndex]?.disorder}
+                            </h3>
+                            <button 
+                                onClick={closeAssessmentPopup}
+                                className="hover:bg-purple-700 p-1 rounded-full transition-all"
+                            >
+                                <XCircle size={20} />
+                            </button>
+                        </div>
+                        
+                        {/* Popup Content */}
+                        <div className="p-4 overflow-y-auto flex-1">
+                            <div className="mb-4 bg-purple-50 p-3 rounded-lg">
+                                <div className="flex justify-between">
+                                    <div>
+                                        <span className="font-medium">Date:</span> {new Date(selectedAssessmentLog.date).toLocaleDateString()}
+                                    </div>
+                                    <div>
+                                        <span className="font-medium">Method:</span> {selectedAssessmentLog.assessmentMethod}
+                                    </div>
+                                </div>
+                                <div className="mt-2">
+                                    <span className="font-medium">Interpretation:</span> {selectedAssessmentLog.interpretation}
+                                </div>
+                            </div>
+
+                            {/* AI Assessment */}
+                            {selectedAssessmentLog.aiAssessment && (
+                                <div className="mb-4">
+                                    <h4 className="font-medium text-purple-700 mb-2">AI Assessment</h4>
+                                    <div className="bg-gray-50 p-3 rounded-lg">
+                                        <p className="text-sm text-gray-700">{selectedAssessmentLog.aiAssessment}</p>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Key Indicators */}
+                            {selectedAssessmentLog.keyIndicators && selectedAssessmentLog.keyIndicators.length > 0 && (
+                                <div className="mb-4">
+                                    <h4 className="font-medium text-purple-700 mb-2">Key Indicators</h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {selectedAssessmentLog.keyIndicators.map((indicator, idx) => (
+                                            <span key={idx} className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">
+                                                {indicator}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Conversation Log */}
+                            <div className="mb-4">
+                                <h4 className="font-medium text-purple-700 mb-2">Conversation Log</h4>
+                                <div className="bg-gray-50 p-3 rounded-lg max-h-[400px] overflow-y-auto space-y-3">
+                                    {selectedAssessmentLog.conversation.map((message) => (
+                                        <div
+                                            key={message.id}
+                                            className={`flex ${message.sender === "AI" ? "justify-start" : "justify-end"}`}
+                                        >
+                                            <div
+                                                className={`p-3 rounded-lg max-w-[80%] ${message.sender === "AI"
+                                                        ? "bg-purple-100 text-purple-900"
+                                                        : "bg-blue-100 text-blue-900"
+                                                    }`}
+                                            >
+                                                {message.text}
+                                                <div className="text-xs text-gray-500 mt-1">
+                                                    {new Date(message.timestamp).toLocaleString()}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            
+                            {/* Action Buttons */}
+                            <div className="flex justify-end space-x-2 mt-4">
+                                <button className="px-4 py-2 bg-green-100 text-green-800 rounded-lg hover:bg-green-200 flex items-center">
+                                    <Check size={16} className="mr-1" />
+                                    Validate Assessment
+                                </button>
+                                <button className="px-4 py-2 bg-red-100 text-red-800 rounded-lg hover:bg-red-200 flex items-center">
+                                    <X size={16} className="mr-1" />
+                                    Flag Assessment
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>

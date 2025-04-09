@@ -123,7 +123,7 @@
     ],
     "recentAssessments": [
         {
-            "assessmentId": "A001",
+            "assessmentId": "1",
             "name": "Anxiety Disorder Screening",
             "category": "Mental Health",
             "summary": "Comprehensive anxiety level assessment",
@@ -140,7 +140,7 @@
             "riskLevel": "Moderate"
         },
         {
-            "assessmentId": "A002",
+            "assessmentId": "2",
             "name": "Depression Evaluation",
             "category": "Mental Health",
             "summary": "Initial depression diagnostic screening",
@@ -157,7 +157,7 @@
             "riskLevel": "High"
         },
         {
-            "assessmentId": "A001",
+            "assessmentId": "1",
             "name": "Anxiety Disorder Screening",
             "category": "Mental Health",
             "summary": "Comprehensive anxiety level assessment",
@@ -174,7 +174,7 @@
             "riskLevel": "Moderate"
         },
         {
-            "assessmentId": "A002",
+            "assessmentId": "2",
             "name": "Depression Evaluation",
             "category": "Mental Health",
             "summary": "Initial depression diagnostic screening",

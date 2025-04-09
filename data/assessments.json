@@ -1,0 +1,268 @@
+{
+    "patientMessageList": [
+        {
+            "patientId": "P001",
+            "name": "Alex Johnson",
+            "status": "Active Treatment",
+            "lastMessage": "I've been feeling much better after starting the new medication",
+            "lastMessageTime": "2025-04-09T12:30:00",
+            "unreadCount": 2,
+            "isPinned": true,
+            "priority": "High"
+        },
+        {
+            "patientId": "P002",
+            "name": "Maria Garcia",
+            "status": "Initial Consultation",
+            "lastMessage": "When should I complete the assessment questionnaire?",
+            "lastMessageTime": "2025-04-08T16:45:00",
+            "unreadCount": 0,
+            "isPinned": false,
+            "priority": "Medium"
+        }
+    ],
+    "mockAssessments": [
+        {
+            "id": "PHQ-9",
+            "name": "Patient Health Questionnaire (PHQ-9)",
+            "category": "Mood Disorders",
+            "description": "A 9-question instrument used to screen, diagnose, monitor, and measure the severity of depression.",
+            "questionCount": 9,
+            "sections": [
+                {
+                    "id": "phq-9-main",
+                    "name": "Depression Screening",
+                    "description": "Measures frequency of depressive symptoms over the past 2 weeks",
+                    "questions": [
+                        "Little interest or pleasure in doing things?",
+                        "Feeling down, depressed, or hopeless?",
+                        "Trouble falling or staying asleep, or sleeping too much?",
+                        "Feeling tired or having little energy?",
+                        "Poor appetite or overeating?",
+                        "Feeling bad about yourself or that you are a failure?",
+                        "Trouble concentrating on things?",
+                        "Moving or speaking so slowly that other people could have noticed?",
+                        "Thoughts that you would be better off dead or of hurting yourself?"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "GAD-7",
+            "name": "Generalized Anxiety Disorder (GAD-7)",
+            "category": "Anxiety Disorders",
+            "description": "A 7-item instrument used to measure and monitor severity of generalized anxiety disorder.",
+            "questionCount": 7,
+            "sections": [
+                {
+                    "id": "gad-7-main",
+                    "name": "Anxiety Screening",
+                    "description": "Measures frequency of anxiety symptoms over the past 2 weeks",
+                    "questions": [
+                        "Feeling nervous, anxious, or on edge?",
+                        "Not being able to stop or control worrying?",
+                        "Worrying too much about different things?",
+                        "Trouble relaxing?",
+                        "Being so restless that it's hard to sit still?",
+                        "Becoming easily annoyed or irritable?",
+                        "Feeling afraid as if something awful might happen?"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "PCL-5",
+            "name": "PTSD Checklist for DSM-5 (PCL-5)",
+            "category": "Trauma-Related",
+            "description": "A 20-item self-report measure that assesses the DSM-5 symptoms of PTSD.",
+            "questionCount": 20,
+            "sections": [
+                {
+                    "id": "pcl-5-intrusion",
+                    "name": "Intrusion Symptoms",
+                    "description": "Assesses re-experiencing symptoms of trauma",
+                    "questions": [
+                        "Repeated, disturbing, and unwanted memories of the stressful experience?",
+                        "Repeated, disturbing dreams of the stressful experience?",
+                        "Suddenly feeling or acting as if the stressful experience were happening again?",
+                        "Feeling very upset when something reminded you of the stressful experience?",
+                        "Having strong physical reactions when something reminded you of the stressful experience?"
+                    ]
+                },
+                {
+                    "id": "pcl-5-avoidance",
+                    "name": "Avoidance",
+                    "description": "Assesses avoidance behaviors related to trauma",
+                    "questions": [
+                        "Avoiding memories, thoughts, or feelings related to the stressful experience?",
+                        "Avoiding external reminders of the stressful experience?"
+                    ]
+                },
+                {
+                    "id": "pcl-5-cognition",
+                    "name": "Negative Alterations in Cognition and Mood",
+                    "description": "Assesses negative changes in thoughts and feelings",
+                    "questions": [
+                        "Trouble remembering important parts of the stressful experience?",
+                        "Having strong negative beliefs about yourself, other people, or the world?",
+                        "Blaming yourself or someone else for the stressful experience or what happened after it?",
+                        "Having strong negative feelings such as fear, horror, anger, guilt, or shame?",
+                        "Loss of interest in activities that you used to enjoy?",
+                        "Feeling distant or cut off from other people?",
+                        "Trouble experiencing positive feelings?"
+                    ]
+                },
+                {
+                    "id": "pcl-5-arousal",
+                    "name": "Alterations in Arousal and Reactivity",
+                    "description": "Assesses changes in arousal and reactivity",
+                    "questions": [
+                        "Irritable behavior, angry outbursts, or acting aggressively?",
+                        "Taking too many risks or doing things that could cause you harm?",
+                        "Being 'super alert' or watchful or on guard?",
+                        "Feeling jumpy or easily startled?",
+                        "Having difficulty concentrating?",
+                        "Trouble falling or staying asleep?"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ASRS",
+            "name": "Adult ADHD Self-Report Scale (ASRS)",
+            "category": "Neurodevelopmental",
+            "description": "An 18-item symptom checklist designed to help screen for attention-deficit/hyperactivity disorder in adults.",
+            "questionCount": 18,
+            "sections": [
+                {
+                    "id": "asrs-part-a",
+                    "name": "Part A - Inattention",
+                    "description": "Assesses symptoms of inattention",
+                    "questions": [
+                        "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+                        "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+                        "How often do you have problems remembering appointments or obligations?",
+                        "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+                        "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+                        "How often do you feel overly active and compelled to do things, like you were driven by a motor?"
+                    ]
+                },
+                {
+                    "id": "asrs-part-b",
+                    "name": "Part B - Hyperactivity/Impulsivity",
+                    "description": "Assesses symptoms of hyperactivity and impulsivity",
+                    "questions": [
+                        "How often do you make careless mistakes when you have to work on a boring or difficult project?",
+                        "How often do you have difficulty keeping your attention when doing boring or repetitive work?",
+                        "How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?",
+                        "How often do you misplace or have difficulty finding things at home or at work?",
+                        "How often are you distracted by activity or noise around you?",
+                        "How often do you leave your seat in meetings or other situations in which you are expected to remain seated?"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "AUDIT",
+            "name": "Alcohol Use Disorders Identification Test (AUDIT)",
+            "category": "General",
+            "description": "A 10-item screening tool developed by the World Health Organization to assess alcohol consumption, drinking behaviors, and alcohol-related problems.",
+            "questionCount": 10,
+            "sections": [
+                {
+                    "id": "audit-consumption",
+                    "name": "Consumption",
+                    "description": "Assesses frequency and quantity of alcohol consumption",
+                    "questions": [
+                        "How often do you have a drink containing alcohol?",
+                        "How many drinks containing alcohol do you have on a typical day when you are drinking?",
+                        "How often do you have six or more drinks on one occasion?"
+                    ]
+                },
+                {
+                    "id": "audit-dependence",
+                    "name": "Dependence",
+                    "description": "Assesses impaired control over drinking and increased salience of drinking",
+                    "questions": [
+                        "How often during the last year have you found that you were not able to stop drinking once you had started?",
+                        "How often during the last year have you failed to do what was normally expected from you because of drinking?",
+                        "How often during the last year have you needed a first drink in the morning to get yourself going after a heavy drinking session?"
+                    ]
+                },
+                {
+                    "id": "audit-problems",
+                    "name": "Alcohol-Related Problems",
+                    "description": "Assesses harmful alcohol use and consequences of drinking",
+                    "questions": [
+                        "How often during the last year have you had a feeling of guilt or remorse after drinking?",
+                        "How often during the last year have you been unable to remember what happened the night before because you had been drinking?",
+                        "Have you or someone else been injured as a result of your drinking?",
+                        "Has a relative or friend or doctor or another health worker been concerned about your drinking or suggested you cut down?"
+                    ]
+                }
+            ]
+        }
+    ],
+    "mockpatients": [
+        {
+            "id": "P001",
+            "name": "Alex Johnson",
+            "status": "Active Treatment",
+            "lastAssessment": "PHQ-9 (Mar 28, 2025)"
+        },
+        {
+            "id": "P002",
+            "name": "Maria Garcia",
+            "status": "Initial Consultation",
+            "lastAssessment": "GAD-7 (Apr 1, 2025)"
+        },
+        {
+            "id": "P003",
+            "name": "James Wilson",
+            "status": "Follow-up Care",
+            "lastAssessment": "AUDIT (Mar 15, 2025)"
+        },
+        {
+            "id": "P004",
+            "name": "Sarah Chen",
+            "status": "Active Treatment",
+            "lastAssessment": "PCL-5 (Mar 22, 2025)"
+        },
+        {
+            "id": "P005",
+            "name": "David Rodriguez",
+            "status": "Initial Consultation",
+            "lastAssessment": null
+        },
+        {
+            "id": "P006",
+            "name": "Emily Taylor",
+            "status": "Follow-up Care",
+            "lastAssessment": "ASRS (Apr 5, 2025)"
+        },
+        {
+            "id": "P007",
+            "name": "Michael Brown",
+            "status": "Active Treatment",
+            "lastAssessment": "PHQ-9 (Apr 2, 2025)"
+        },
+        {
+            "id": "P008",
+            "name": "Jessica Williams",
+            "status": "Initial Consultation",
+            "lastAssessment": null
+        },
+        {
+            "id": "P009",
+            "name": "Thomas Moore",
+            "status": "Follow-up Care",
+            "lastAssessment": "GAD-7 (Mar 19, 2025)"
+        },
+        {
+            "id": "P010",
+            "name": "Samantha Lee",
+            "status": "Active Treatment",
+            "lastAssessment": "PCL-5 (Apr 3, 2025)"
+        }
+    ]
+}

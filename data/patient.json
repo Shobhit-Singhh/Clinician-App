@@ -128,6 +128,9 @@
                 {
                     "id": "mood_assessment_1",
                     "type": "Mood Assessment",
+                    "category": "Mood",
+                    "variation": "direct",
+                    "variationName": "Direct",
                     "status": "in_progress",
                     "assignedDate": "2024-03-15",
                     "completedDate": null,
@@ -137,406 +140,1033 @@
                 {
                     "id": "anxiety_screening_1",
                     "type": "Anxiety Screening",
+                    "category": "Anxiety",
+                    "variation": "therapeutic",
+                    "variationName": "Therapeutic",
                     "status": "completed",
                     "assignedDate": "2024-02-20",
                     "completedDate": "2024-03-10",
                     "completionPercentage": 100,
                     "notes": "Moderate anxiety levels detected"
+                },
+                {
+                    "id": "depression_evaluation_1",
+                    "type": "Depression Evaluation",
+                    "category": "Depression",
+                    "variation": "conversational",
+                    "variationName": "Conversational",
+                    "status": "in_progress",
+                    "assignedDate": "2024-04-01",
+                    "completedDate": null,
+                    "completionPercentage": 25,
+                    "notes": "Initial conversation approach assessment"
                 }
             ],
-            "reports": {
-                "diagnosis": {
-                    "mentalHealthDisorders": [
-                        {
-                            "disorder": "Major Depressive Disorder (MDD)",
-                            "dsm5Code": "F32.9",
-                            "severityScore": 7,
-                            "diagnosticDate": "2025-03-27",
-                            "diagnosticMethod": "Clinical Interview & PHQ-9",
-                            "assessmentLog": [
-                                {
-                                    "date": "2024-03-20",
-                                    "conversation": [
-                                        {
-                                            "id": 1,
-                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:00:00Z"
-                                        },
-                                        {
-                                            "id": 2,
-                                            "text": "Almost every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:01:00Z"
-                                        },
-                                        {
-                                            "id": 3,
-                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:02:00Z"
-                                        },
-                                        {
-                                            "id": 4,
-                                            "text": "Nearly every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:03:00Z"
-                                        },
-                                        {
-                                            "id": 5,
-                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:04:00Z"
-                                        },
-                                        {
-                                            "id": 6,
-                                            "text": "Yes, I have trouble sleeping most nights.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:05:00Z"
-                                        },
-                                        {
-                                            "id": 7,
-                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:06:00Z"
-                                        },
-                                        {
-                                            "id": 8,
-                                            "text": "Yes, I feel exhausted every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:07:00Z"
-                                        },
-                                        {
-                                            "id": 9,
-                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:08:00Z"
-                                        },
-                                        {
-                                            "id": 10,
-                                            "text": "I don't feel like eating much anymore.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:09:00Z"
-                                        },
-                                        {
-                                            "id": 11,
-                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:10:00Z"
-                                        },
-                                        {
-                                            "id": 12,
-                                            "text": "Yes, almost every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:11:00Z"
-                                        },
-                                        {
-                                            "id": 13,
-                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:12:00Z"
-                                        },
-                                        {
-                                            "id": 14,
-                                            "text": "Yes, I lose focus very easily.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:13:00Z"
-                                        },
-                                        {
-                                            "id": 15,
-                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:14:00Z"
-                                        },
-                                        {
-                                            "id": 16,
-                                            "text": "I feel very restless.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:15:00Z"
-                                        },
-                                        {
-                                            "id": 17,
-                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:16:00Z"
-                                        },
-                                        {
-                                            "id": 18,
-                                            "text": "Yes, sometimes.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:17:00Z"
-                                        },
-                                        {
-                                            "id": 19,
-                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:18:00Z"
-                                        },
-                                        {
-                                            "id": 20,
-                                            "text": "I think I need help.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:19:00Z"
-                                        },
-                                        {
-                                            "id": 21,
-                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:20:00Z"
-                                        },
-                                        {
-                                            "id": 22,
-                                            "text": "Thank you. I appreciate it.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:21:00Z"
-                                        }
-                                    ],
-                                    "score": 21,
-                                    "interpretation": "Severe depression"
-                                }
-                            ],
-                            "copingStrategies": [
-                                "Cognitive Behavioral Therapy",
-                                "Escitalopram 10mg daily"
-                            ],
-                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+            "soap": {
+                "subjective": {
+                    "chiefComplaint": "Persistent feelings of sadness, low energy, and difficulty sleeping for past 3 months",
+                    "historyOfPresentIllness": {
+                        "onset": "Gradual onset over past 3 months",
+                        "context": "Started after job change and relocation",
+                        "severity": "Severe, affecting daily functioning",
+                        "temporalPattern": "Worse in mornings, slight improvement in evenings",
+                        "alleviatingFactors": "Brief improvement with physical activity",
+                        "aggravatingFactors": "Work stress, social isolation"
+                    },
+                    "psychiatricHistory": {
+                        "pastDiagnoses": [
+                            {
+                                "condition": "Generalized Anxiety Disorder",
+                                "diagnosisDate": "2020-05-15",
+                                "provider": "Dr. James Wilson",
+                                "treatmentHistory": "Sertraline 50mg daily for 8 months, discontinued due to side effects",
+                                "remissionStatus": "Partial remission without medication"
+                            }
+                        ],
+                        "previousHospitalizations": [],
+                        "suicidalIdeation": {
+                            "current": true,
+                            "past": false,
+                            "plan": false,
+                            "intent": false,
+                            "lastOccurrence": "2025-03-20",
+                            "details": "Passive thoughts without plan or intent"
                         },
-                        {
-                            "disorder": "Major Depressive Disorder (MDD)",
-                            "dsm5Code": "F32.9",
-                            "severityScore": 7,
-                            "diagnosticDate": "2025-03-27",
-                            "diagnosticMethod": "Clinical Interview & PHQ-9",
-                            "assessmentLog": [
-                                {
-                                    "date": "2024-03-20",
-                                    "conversation": [
-                                        {
-                                            "id": 1,
-                                            "text": "Hello Emily, I’m here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:00:00Z"
-                                        },
-                                        {
-                                            "id": 2,
-                                            "text": "Almost every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:01:00Z"
-                                        },
-                                        {
-                                            "id": 3,
-                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:02:00Z"
-                                        },
-                                        {
-                                            "id": 4,
-                                            "text": "Nearly every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:03:00Z"
-                                        },
-                                        {
-                                            "id": 5,
-                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:04:00Z"
-                                        },
-                                        {
-                                            "id": 6,
-                                            "text": "Yes, I have trouble sleeping most nights.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:05:00Z"
-                                        },
-                                        {
-                                            "id": 7,
-                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:06:00Z"
-                                        },
-                                        {
-                                            "id": 8,
-                                            "text": "Yes, I feel exhausted every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:07:00Z"
-                                        },
-                                        {
-                                            "id": 9,
-                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:08:00Z"
-                                        },
-                                        {
-                                            "id": 10,
-                                            "text": "I don't feel like eating much anymore.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:09:00Z"
-                                        },
-                                        {
-                                            "id": 11,
-                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:10:00Z"
-                                        },
-                                        {
-                                            "id": 12,
-                                            "text": "Yes, almost every day.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:11:00Z"
-                                        },
-                                        {
-                                            "id": 13,
-                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:12:00Z"
-                                        },
-                                        {
-                                            "id": 14,
-                                            "text": "Yes, I lose focus very easily.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:13:00Z"
-                                        },
-                                        {
-                                            "id": 15,
-                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:14:00Z"
-                                        },
-                                        {
-                                            "id": 16,
-                                            "text": "I feel very restless.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:15:00Z"
-                                        },
-                                        {
-                                            "id": 17,
-                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:16:00Z"
-                                        },
-                                        {
-                                            "id": 18,
-                                            "text": "Yes, sometimes.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:17:00Z"
-                                        },
-                                        {
-                                            "id": 19,
-                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:18:00Z"
-                                        },
-                                        {
-                                            "id": 20,
-                                            "text": "I think I need help.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:19:00Z"
-                                        },
-                                        {
-                                            "id": 21,
-                                            "text": "You're not alone, and there is support available. I will provide you with a treatment plan and schedule a follow-up to monitor your progress.",
-                                            "sender": "AI",
-                                            "timestamp": "2024-03-20T10:20:00Z"
-                                        },
-                                        {
-                                            "id": 22,
-                                            "text": "Thank you. I appreciate it.",
-                                            "sender": "Patient",
-                                            "timestamp": "2024-03-20T10:21:00Z"
-                                        }
-                                    ],
-                                    "score": 21,
-                                    "interpretation": "Severe depression"
-                                }
-                            ],
-                            "copingStrategies": [
-                                "Cognitive Behavioral Therapy",
-                                "Escitalopram 10mg daily"
-                            ],
-                            "recommendedFollowup": "Weekly therapy sessions and close monitoring for suicide risk"
+                        "selfHarmHistory": {
+                            "current": false,
+                            "past": false
+                        },
+                        "substanceUse": {
+                            "alcohol": {
+                                "current": "Social drinking, 2-3 drinks weekly",
+                                "past": "No history of alcohol misuse"
+                            },
+                            "tobacco": "None",
+                            "cannabis": "None",
+                            "otherSubstances": "None"
                         }
-                    ]
-                },
-                "medicalHistory": {
-                    "personalMedicalHistory": [
-                        {
-                            "condition": "Hypertension",
-                            "diagnosisDate": "2022-06-10",
-                            "currentStatus": "Managed",
-                            "treatments": [
-                                "Lisinopril 10mg daily"
-                            ],
-                            "lastCheckup": "2024-03-15"
-                        },
-                        {
-                            "condition": "Type 2 Diabetes",
-                            "diagnosisDate": "2021-11-20",
-                            "currentStatus": "Controlled",
-                            "treatments": [
-                                "Metformin 500mg twice daily",
-                                "Diet modification"
-                            ],
-                            "lastCheckup": "2024-02-28"
+                    },
+                    "medicalHistory": {
+                        "personalMedicalHistory": [
+                            {
+                                "condition": "Hypertension",
+                                "diagnosisDate": "2022-06-10",
+                                "currentStatus": "Managed",
+                                "treatments": [
+                                    "Lisinopril 10mg daily"
+                                ],
+                                "lastCheckup": "2024-03-15"
+                            },
+                            {
+                                "condition": "Type 2 Diabetes",
+                                "diagnosisDate": "2021-11-20",
+                                "currentStatus": "Controlled",
+                                "treatments": [
+                                    "Metformin 500mg twice daily",
+                                    "Diet modification"
+                                ],
+                                "lastCheckup": "2024-02-28"
+                            }
+                        ],
+                        "allergies": [
+                            {
+                                "allergen": "Penicillin",
+                                "reaction": "Rash",
+                                "severity": "Moderate"
+                            }
+                        ],
+                        "currentMedications": [
+                            {
+                                "name": "Lisinopril",
+                                "dosage": "10mg",
+                                "frequency": "Once daily",
+                                "purpose": "Hypertension",
+                                "startDate": "2022-06-15",
+                                "prescriber": "Dr. Michael Chen"
+                            },
+                            {
+                                "name": "Metformin",
+                                "dosage": "500mg",
+                                "frequency": "Twice daily",
+                                "purpose": "Type 2 Diabetes",
+                                "startDate": "2021-11-25",
+                                "prescriber": "Dr. Michael Chen"
+                            }
+                        ]
+                    },
+                    "familyHistory": {
+                        "psychiatricHistory": [
+                            {
+                                "relation": "Mother",
+                                "condition": "Depression",
+                                "ageOfOnset": 42,
+                                "treatment": "Medication and therapy",
+                                "outcome": "Managed with ongoing treatment"
+                            },
+                            {
+                                "relation": "Maternal Aunt",
+                                "condition": "Bipolar Disorder",
+                                "ageOfOnset": 35,
+                                "treatment": "Mood stabilizers",
+                                "outcome": "Stable with medication"
+                            }
+                        ],
+                        "medicalHistory": [
+                            {
+                                "relation": "Mother",
+                                "conditions": [
+                                    "Breast Cancer",
+                                    "Hypertension"
+                                ],
+                                "ageOfOnset": [
+                                    55,
+                                    48
+                                ]
+                            },
+                            {
+                                "relation": "Father",
+                                "conditions": [
+                                    "Type 2 Diabetes",
+                                    "Heart Disease"
+                                ],
+                                "ageOfOnset": [
+                                    52,
+                                    60
+                                ]
+                            }
+                        ]
+                    },
+                    "socialHistory": {
+                        "maritalStatus": "Married",
+                        "livingArrangement": "Lives with spouse in urban apartment",
+                        "occupation": "Marketing Manager",
+                        "educationLevel": "Master's degree",
+                        "socialSupport": "Strong family support, active in community groups",
+                        "stressors": [
+                            "Recent job change with increased responsibilities",
+                            "Financial concerns due to spouse's recent job loss",
+                            "Limited social interactions since relocation"
+                        ],
+                        "trauma": {
+                            "childhood": "None reported",
+                            "adulthood": "Lost parent to cancer two years ago"
                         }
-                    ],
-                    "familyMedicalHistory": [
-                        {
-                            "relation": "Mother",
-                            "conditions": [
-                                "Breast Cancer",
-                                "Hypertension"
-                            ],
-                            "ageOfOnset": [
-                                "55",
-                                "48"
-                            ]
+                    },
+                    "lifestyleFactors": {
+                        "diet": "Balanced diet, occasional processed foods",
+                        "exercise": "30 minutes walk, 3 times a week",
+                        "sleepPattern": {
+                            "hoursPerNight": "6-7 hours",
+                            "issues": "Difficulty falling asleep, early morning wakening",
+                            "qualityAssessment": "Poor, non-refreshing"
                         },
-                        {
-                            "relation": "Father",
-                            "conditions": [
-                                "Type 2 Diabetes",
-                                "Heart Disease"
-                            ],
-                            "ageOfOnset": [
-                                "52",
-                                "60"
-                            ]
-                        }
-                    ],
-                    "environmentalHistory": [
-                        {
-                            "type": "Occupational Exposure",
-                            "details": "Office worker, sedentary job with high stress",
-                            "potentialHealthRisks": [
-                                "Repetitive Strain Injury",
-                                "Chronic Stress"
-                            ]
-                        },
-                        {
-                            "type": "Living Environment",
-                            "details": "Urban apartment, close to major road",
+                        "environmentalExposure": {
+                            "type": "Urban apartment, close to major road",
                             "potentialHealthRisks": [
                                 "Air Pollution Exposure"
                             ]
                         }
-                    ]
+                    },
+                    "patientReportedSymptoms": {
+                        "mood": "Depressed, persistent sadness",
+                        "anxiety": "Moderate, worse in social situations",
+                        "energyLevel": "Low, fatigue throughout the day",
+                        "appetiteChanges": "Decreased, lost 10 pounds in 2 months",
+                        "concentration": "Poor, difficulty focusing at work",
+                        "anhedonia": "Significant loss of interest in previously enjoyed activities",
+                        "psychoticSymptoms": "None reported",
+                        "functionalImpact": "Missing work deadlines, neglecting household responsibilities"
+                    }
                 },
-                "miscellaneous": {
-                    "lifestyle": {
-                        "diet": "Balanced diet, occasional processed foods",
-                        "exercise": "30 minutes walk, 3 times a week",
-                        "sleepPattern": "6-7 hours, occasional insomnia"
+                "objective": {
+                    "mentalStatusExam": {
+                        "appearance": "Well-groomed but appears fatigued",
+                        "behavior": "Psychomotor retardation, slumped posture",
+                        "attitudeTowardExaminer": "Cooperative, engaged",
+                        "speech": {
+                            "rate": "Slow",
+                            "rhythm": "Regular",
+                            "volume": "Soft",
+                            "articulation": "Clear"
+                        },
+                        "mood": "Depressed",
+                        "affect": {
+                            "type": "Constricted",
+                            "congruence": "Congruent with reported mood",
+                            "intensity": "Reduced"
+                        },
+                        "thoughtProcess": {
+                            "flow": "Linear, logical",
+                            "speed": "Slowed"
+                        },
+                        "thoughtContent": {
+                            "suicidalIdeation": "Passive, without plan or intent",
+                            "homicidalIdeation": "Absent",
+                            "delusions": "Absent",
+                            "ruminations": "Present, focused on perceived failures"
+                        },
+                        "perceptions": {
+                            "hallucinations": "Absent",
+                            "illusions": "Absent"
+                        },
+                        "cognition": {
+                            "orientation": "Alert and oriented x4",
+                            "attention": "Mildly impaired",
+                            "memory": "Recent memory slightly impaired",
+                            "concentration": "Diminished",
+                            "abstraction": "Intact",
+                            "insight": "Partial awareness of condition",
+                            "judgment": "Adequate for safety"
+                        }
                     },
-                    "socialHistory": {
-                        "maritalStatus": "Married",
-                        "occupation": "Marketing Manager",
-                        "socialSupport": "Strong family support, active in community groups"
-                    },
-                    "additionalNotes": [
+                    "patientAssessmentTools": [
                         {
-                            "date": "2024-03-20",
-                            "note": "Patient expressed interest in stress management techniques",
-                            "author": "Dr. Sarah Thompson"
+                            "name": "PHQ-9",
+                            "date": "2025-03-27",
+                            "score": 21,
+                            "interpretation": "Severe depression",
+                            "responseDetails": {
+                                "anhedonia": 3,
+                                "depressedMood": 3,
+                                "sleepDisturbance": 3,
+                                "fatigue": 3,
+                                "appetiteChanges": 2,
+                                "worthlessness": 3,
+                                "concentrationDifficulty": 2,
+                                "psychomotorChanges": 1,
+                                "suicidalIdeation": 1
+                            }
+                        },
+                        {
+                            "name": "GAD-7",
+                            "date": "2025-03-27",
+                            "score": 15,
+                            "interpretation": "Severe anxiety"
+                        },
+                        {
+                            "name": "Columbia Suicide Severity Rating Scale",
+                            "date": "2025-03-27",
+                            "result": "Low risk - passive ideation without plan or intent"
+                        }
+                    ],
+                    "vitalSigns": {
+                        "bloodPressure": "135/85 mmHg",
+                        "heartRate": "78 bpm",
+                        "respiratoryRate": "16 breaths/min",
+                        "temperature": "98.6°F",
+                        "height": "5'6\"",
+                        "weight": "145 lbs",
+                        "bmi": 23.4,
+                        "oxygenSaturation": "98%"
+                    },
+                    "physicalExamination": {
+                        "general": "Alert, cooperative, appears tired",
+                        "heent": "Normocephalic, atraumatic",
+                        "neck": "Supple, no thyromegaly",
+                        "cardiovascular": "Regular rate and rhythm, no murmurs",
+                        "respiratory": "Clear to auscultation bilaterally",
+                        "abdominal": "Soft, non-tender, no organomegaly",
+                        "extremities": "No edema",
+                        "neurological": "Grossly intact, no focal deficits",
+                        "skin": "No rashes or lesions"
+                    },
+                    "labReports": [
+                        {
+                            "date": "2025-03-20",
+                            "testType": "Complete Blood Count",
+                            "results": [
+                                {
+                                    "parameter": "Hemoglobin",
+                                    "value": "13.2 g/dL",
+                                    "referenceRange": "12.0-15.5 g/dL",
+                                    "flag": "normal"
+                                },
+                                {
+                                    "parameter": "White Blood Cell Count",
+                                    "value": "6.8 x10^9/L",
+                                    "referenceRange": "4.5-11.0 x10^9/L",
+                                    "flag": "normal"
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2025-03-20",
+                            "testType": "Comprehensive Metabolic Panel",
+                            "results": [
+                                {
+                                    "parameter": "Glucose (fasting)",
+                                    "value": "115 mg/dL",
+                                    "referenceRange": "70-99 mg/dL",
+                                    "flag": "high"
+                                },
+                                {
+                                    "parameter": "TSH",
+                                    "value": "2.5 mIU/L",
+                                    "referenceRange": "0.4-4.0 mIU/L",
+                                    "flag": "normal"
+                                },
+                                {
+                                    "parameter": "Vitamin D",
+                                    "value": "22 ng/mL",
+                                    "referenceRange": "30-100 ng/mL",
+                                    "flag": "low"
+                                }
+                            ]
                         }
                     ]
+                },
+                "assessment": {
+                    "diagnoses": [
+                        {
+                            "disorder": "Major Depressive Disorder (MDD)",
+                            "dsm5Code": "F32.2",
+                            "specifiers": "With anxious distress, moderate",
+                            "severityScore": 7,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & PHQ-9",
+                            "diagnosingClinician": "Dr. Sarah Thompson",
+                            "diagnosticCriteria": {
+                                "symptomsPresent": [
+                                    "Depressed mood",
+                                    "Markedly diminished interest or pleasure",
+                                    "Significant weight loss",
+                                    "Insomnia",
+                                    "Fatigue/loss of energy",
+                                    "Feelings of worthlessness/guilt",
+                                    "Diminished concentration",
+                                    "Psychomotor agitation",
+                                    "Recurrent thoughts of death"
+                                ],
+                                "duration": "More than 2 weeks",
+                                "functionalImpairment": "Significant impairment in occupational functioning",
+                                "exclusionCriteria": {
+                                    "substanceInduced": false,
+                                    "medicalCondition": false,
+                                    "bereavement": false,
+                                    "bipolarDisorder": false,
+                                    "psychoticDisorder": false
+                                }
+                            },
+                            "differentialDiagnosis": [
+                                {
+                                    "condition": "Persistent Depressive Disorder",
+                                    "reasonForExclusion": "Symptoms duration less than 2 years"
+                                },
+                                {
+                                    "condition": "Bipolar Disorder",
+                                    "reasonForExclusion": "No history of manic or hypomanic episodes"
+                                },
+                                {
+                                    "condition": "Adjustment Disorder with Depressed Mood",
+                                    "reasonForExclusion": "Symptom severity exceeds typical adjustment disorder presentation"
+                                },
+                                {
+                                    "condition": "Hypothyroidism",
+                                    "reasonForExclusion": "Normal TSH levels"
+                                }
+                            ],
+                            "assessmentLog": [
+                                {
+                                    "date": "2025-03-27",
+                                    "assessor": "Dr. Sarah Thompson",
+                                    "assessmentMethod": "Clinical Interview, PHQ-9, GAD-7",
+                                    "conversation": [
+                                        {
+                                            "id": 1,
+                                            "text": "Hello Emily, I'm here to check in on your mental health. Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:00:00Z"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "text": "Almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:01:00Z"
+                                        },
+                                        {
+                                            "id": 3,
+                                            "text": "I see. And how often have you been feeling down, depressed, or hopeless?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:02:00Z"
+                                        },
+                                        {
+                                            "id": 4,
+                                            "text": "Nearly every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:03:00Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "text": "Thank you for sharing. Have you experienced trouble sleeping, either difficulty falling asleep or sleeping too much?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:04:00Z"
+                                        },
+                                        {
+                                            "id": 6,
+                                            "text": "Yes, I have trouble sleeping most nights.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:05:00Z"
+                                        },
+                                        {
+                                            "id": 7,
+                                            "text": "That sounds difficult. How about your energy levels—do you often feel tired or have little energy?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:06:00Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "text": "Yes, I feel exhausted every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:07:00Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "text": "I understand. Have you noticed any significant changes in your appetite or weight?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:08:00Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "text": "I don't feel like eating much anymore.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:09:00Z"
+                                        },
+                                        {
+                                            "id": 11,
+                                            "text": "Noted. Do you often feel bad about yourself, or that you are a failure or have let yourself or your family down?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:10:00Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "text": "Yes, almost every day.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:11:00Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "text": "That must be tough. Have you had trouble concentrating, for example, while reading or watching TV?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:12:00Z"
+                                        },
+                                        {
+                                            "id": 14,
+                                            "text": "Yes, I lose focus very easily.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:13:00Z"
+                                        },
+                                        {
+                                            "id": 15,
+                                            "text": "I see. Have you been moving or speaking unusually slowly, or the opposite—feeling restless or fidgety?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:14:00Z"
+                                        },
+                                        {
+                                            "id": 16,
+                                            "text": "I feel very restless.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:15:00Z"
+                                        },
+                                        {
+                                            "id": 17,
+                                            "text": "Understood. Finally, have you had thoughts that you would be better off dead or thoughts of harming yourself?",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:16:00Z"
+                                        },
+                                        {
+                                            "id": 18,
+                                            "text": "Yes, sometimes.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:17:00Z"
+                                        },
+                                        {
+                                            "id": 19,
+                                            "text": "Thank you for sharing, Emily. Based on your responses, your PHQ-9 score is 21, which indicates severe depression. I strongly recommend speaking with a mental health professional as soon as possible.",
+                                            "sender": "AI",
+                                            "timestamp": "2025-03-27T10:18:00Z"
+                                        },
+                                        {
+                                            "id": 20,
+                                            "text": "I think I need help.",
+                                            "sender": "Patient",
+                                            "timestamp": "2025-03-27T10:19:00Z"
+                                        }
+                                    ],
+                                    "score": 21,
+                                    "interpretation": "Severe depression with suicide risk",
+                                    "aiAssessment": "Patient exhibits significant depressive symptoms, including anhedonia, sleep disturbance, and passive suicidal ideation.",
+                                    "keyIndicators": [
+                                        "Depressed mood",
+                                        "Anhedonia",
+                                        "Sleep disturbance",
+                                        "Low energy",
+                                        "Poor appetite",
+                                        "Low self-esteem",
+                                        "Poor concentration",
+                                        "Psychomotor agitation",
+                                        "Passive suicidal ideation"
+                                    ]
+                                }
+                            ],
+                            "riskAssessment": {
+                                "suicideRisk": {
+                                    "level": "Moderate",
+                                    "riskFactors": [
+                                        "Passive suicidal ideation",
+                                        "Severe depression",
+                                        "Recent significant stressors",
+                                        "Sleep disturbance"
+                                    ],
+                                    "protectiveFactors": [
+                                        "Strong family support",
+                                        "No prior suicide attempts",
+                                        "Willingness to seek treatment",
+                                        "No access to lethal means"
+                                    ],
+                                    "safetyPlan": "Created with patient on 2025-03-27"
+                                },
+                                "dangerToOthers": "No indication of risk",
+                                "selfNeglect": "Mild risk due to poor appetite and self-care",
+                                "vulnerabilityToExploitation": "Low risk"
+                            }
+                        },
+                        {
+                            "disorder": "Generalized Anxiety Disorder (GAD)",
+                            "dsm5Code": "F41.1",
+                            "severityScore": 5,
+                            "diagnosticDate": "2025-03-27",
+                            "diagnosticMethod": "Clinical Interview & GAD-7",
+                            "diagnosingClinician": "Dr. Sarah Thompson",
+                            "diagnosticCriteria": {
+                                "symptomsPresent": [
+                                    "Excessive anxiety/worry",
+                                    "Difficulty controlling worry",
+                                    "Restlessness",
+                                    "Fatigue",
+                                    "Difficulty concentrating",
+                                    "Sleep disturbance"
+                                ],
+                                "duration": "More than 6 months",
+                                "functionalImpairment": "Moderate impairment in occupational and social functioning"
+                            }
+                        }
+                    ],
+                    "formulation": {
+                        "biologicalFactors": [
+                            "Family history of depression",
+                            "Possible genetic predisposition",
+                            "Vitamin D deficiency",
+                            "Sleep disturbance",
+                            "Comorbid medical conditions (hypertension, diabetes)"
+                        ],
+                        "psychologicalFactors": [
+                            "Negative thought patterns",
+                            "Perfectionist tendencies",
+                            "Poor stress coping mechanisms",
+                            "Unresolved grief from parent's death"
+                        ],
+                        "socialFactors": [
+                            "Recent job change with increased stress",
+                            "Financial concerns",
+                            "Reduced social connections after relocation",
+                            "Spouse's job loss"
+                        ],
+                        "formationHypothesis": "Emily's depression appears to have developed in the context of multiple stressors (job change, relocation, spouse's job loss) against a background of biological vulnerability (family history). The absence of strong coping mechanisms and reduced social support likely contributed to symptom development and maintenance.",
+                        "treatmentImplications": "Treatment should address biological symptoms through medication, psychological factors through CBT, and social factors through support enhancement and stress management."
+                    }
+                },
+                "plan": {
+                    "approvedCopingStrategies": [
+                        "Mindfulness Meditation",
+                        "Regular Exercise",
+                        "Sleep Hygiene"
+                    ],
+                    "suggestedCopingStrategies": [
+                        "Cognitive Behavioral Therapy",
+                        "Mindfulness Meditation",
+                        "Regular Exercise",
+                        "Sleep Hygiene",
+                        "Support Group Therapy",
+                        "Stress Management Techniques",
+                        "Psychotherapy",
+                        "Medication Adjustment",
+                        "Nutritional Counseling",
+                        "Art Therapy",
+                        "Exposure Therapy",
+                        "Dialectical Behavior Therapy"
+                    ],
+                    "medications": [
+                        {
+                            "name": "Fluoxetine",
+                            "dosage": "20",
+                            "frequency": "Once daily",
+                            "purpose": "Depression",
+                            "instructions": "Take in the morning with food",
+                            "startDate": "2024-11-15",
+                            "approved": true
+                        },
+                        {
+                            "name": "Lorazepam",
+                            "dosage": "0.5",
+                            "frequency": "As needed",
+                            "purpose": "Anxiety",
+                            "instructions": "Take only when experiencing severe anxiety",
+                            "startDate": "2024-12-01",
+                            "approved": true
+                        }
+                    ],
+                    "suggestedMedications": [
+                        {
+                            "name": "Sertraline",
+                            "dosage": "50",
+                            "frequency": "Once daily",
+                            "purpose": "Depression/Anxiety",
+                            "instructions": "Take in the morning with food",
+                            "potentialSideEffects": [
+                                "Nausea",
+                                "Headache",
+                                "Insomnia",
+                                "Dizziness"
+                            ]
+                        },
+                        {
+                            "name": "Bupropion",
+                            "dosage": "150",
+                            "frequency": "Once daily",
+                            "purpose": "Depression",
+                            "instructions": "Take in the morning",
+                            "potentialSideEffects": [
+                                "Dry mouth",
+                                "Insomnia",
+                                "Agitation",
+                                "Headache"
+                            ]
+                        }
+                    ],
+                    "lifestyleInterventions": {
+                        "activities": {
+                            "exercise": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "description": "30-minute walk in the morning to improve mood and energy levels",
+                                    "frequency": "Daily",
+                                    "duration": "30 min",
+                                    "approved": true,
+                                    "isCustom": false
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Strength Training",
+                                    "description": "Basic resistance exercises to improve physical strength and mental resilience",
+                                    "frequency": "3 times per week",
+                                    "duration": "45 min",
+                                    "approved": true,
+                                    "isCustom": false
+                                }
+                            ],
+                            "diet": [
+                                {
+                                    "id": 3,
+                                    "name": "Mediterranean Diet",
+                                    "description": "Focus on fruits, vegetables, whole grains, lean proteins, and healthy fats",
+                                    "frequency": "Daily",
+                                    "duration": "Ongoing",
+                                    "approved": true,
+                                    "isCustom": false
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Reduced Caffeine Intake",
+                                    "description": "Limit caffeine to morning hours to improve sleep quality",
+                                    "frequency": "Daily",
+                                    "duration": "Ongoing",
+                                    "approved": false,
+                                    "isCustom": true
+                                }
+                            ],
+                            "sleep": [
+                                {
+                                    "id": 5,
+                                    "name": "Regular Sleep Schedule",
+                                    "description": "Maintain consistent sleep and wake times",
+                                    "frequency": "Daily",
+                                    "duration": "8 hours per night",
+                                    "approved": true,
+                                    "isCustom": false
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "No Screens Before Bed",
+                                    "description": "Avoid electronic devices 1 hour before bedtime",
+                                    "frequency": "Daily",
+                                    "duration": "Ongoing",
+                                    "approved": false,
+                                    "isCustom": false
+                                }
+                            ],
+                            "mindfulness": [
+                                {
+                                    "id": 7,
+                                    "name": "Meditation",
+                                    "description": "Guided mindfulness meditation to reduce anxiety and improve focus",
+                                    "frequency": "Daily",
+                                    "duration": "15 min",
+                                    "approved": true,
+                                    "isCustom": false
+                                }
+                            ],
+                            "learning": [
+                                {
+                                    "id": 8,
+                                    "name": "Reading Time",
+                                    "description": "Dedicated time for reading to stimulate the mind",
+                                    "frequency": "Daily",
+                                    "duration": "30 min",
+                                    "approved": false,
+                                    "isCustom": true
+                                }
+                            ],
+                            "relationships": [
+                                {
+                                    "id": 9,
+                                    "name": "Family Dinner",
+                                    "description": "Have dinner with family without distractions",
+                                    "frequency": "Daily",
+                                    "duration": "1 hour",
+                                    "approved": true,
+                                    "isCustom": false
+                                }
+                            ]
+                        },
+                        "reminders": [
+                            {
+                                "id": 101,
+                                "name": "Hydration Reminder",
+                                "type": "water",
+                                "frequency": "Every 2 hours",
+                                "time": "8:00 AM - 8:00 PM",
+                                "approved": true,
+                                "isCustom": false
+                            },
+                            {
+                                "id": 102,
+                                "name": "Medication Reminder",
+                                "type": "medication",
+                                "frequency": "Twice daily",
+                                "time": "9:00 AM and 9:00 PM",
+                                "approved": true,
+                                "isCustom": false
+                            },
+                            {
+                                "id": 103,
+                                "name": "Deep Breathing Exercise",
+                                "type": "breathing",
+                                "frequency": "3 times daily",
+                                "time": "Morning, afternoon, evening",
+                                "approved": false,
+                                "isCustom": true
+                            },
+                            {
+                                "id": 104,
+                                "name": "Screen Break",
+                                "type": "eyeRelaxation",
+                                "frequency": "Hourly",
+                                "time": "During work hours",
+                                "approved": true,
+                                "isCustom": false
+                            }
+                        ],
+                        "weeklyPlan": {
+                            "Monday": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "category": "exercise",
+                                    "duration": "30 min"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Meditation",
+                                    "category": "mindfulness",
+                                    "duration": "15 min"
+                                }
+                            ],
+                            "Tuesday": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "category": "exercise",
+                                    "duration": "30 min"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Strength Training",
+                                    "category": "exercise",
+                                    "duration": "45 min"
+                                }
+                            ],
+                            "Wednesday": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "category": "exercise",
+                                    "duration": "30 min"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Meditation",
+                                    "category": "mindfulness",
+                                    "duration": "15 min"
+                                }
+                            ],
+                            "Thursday": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "category": "exercise",
+                                    "duration": "30 min"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Strength Training",
+                                    "category": "exercise",
+                                    "duration": "45 min"
+                                }
+                            ],
+                            "Friday": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "category": "exercise",
+                                    "duration": "30 min"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Meditation",
+                                    "category": "mindfulness",
+                                    "duration": "15 min"
+                                }
+                            ],
+                            "Saturday": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "category": "exercise",
+                                    "duration": "30 min"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Strength Training",
+                                    "category": "exercise",
+                                    "duration": "45 min"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Family Dinner",
+                                    "category": "relationships",
+                                    "duration": "1 hour"
+                                }
+                            ],
+                            "Sunday": [
+                                {
+                                    "id": 1,
+                                    "name": "Morning Walk",
+                                    "category": "exercise",
+                                    "duration": "30 min"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Family Dinner",
+                                    "category": "relationships",
+                                    "duration": "1 hour"
+                                }
+                            ]
+                        }
+                    },
+                    "suggestedLifestyleInterventions": [
+                        {
+                            "exercise": "Incorporate yoga practice 3 times per week",
+                            "sleepHygiene": [
+                                "Use a weighted blanket",
+                                "Try meditation before sleep",
+                                "Limit fluid intake 2 hours before bedtime",
+                                "Use white noise machine if needed"
+                            ],
+                            "nutrition": [
+                                "Consider Mediterranean diet approach",
+                                "Meal preparation on weekends",
+                                "Limit alcohol consumption",
+                                "Increase fiber intake"
+                            ],
+                            "stressManagement": "Practice mindfulness meditation for 15 minutes daily",
+                            "socialConnections": "Join a hobby-based social group"
+                        },
+                        {
+                            "exercise": "Swimming or water aerobics 3 times per week",
+                            "sleepHygiene": [
+                                "Try a sleep tracking app",
+                                "Cognitive restructuring techniques for night worries",
+                                "Progressive muscle relaxation before bed",
+                                "Limit naps to 20 minutes max"
+                            ],
+                            "nutrition": [
+                                "Consult with nutritionist",
+                                "Try anti-inflammatory diet approach",
+                                "Increase probiotic-rich foods",
+                                "Consider keeping a food-mood journal"
+                            ],
+                            "stressManagement": "Guided imagery sessions 3 times per week",
+                            "socialConnections": "Schedule regular video calls with supportive friends/family"
+                        }
+                    ],
+                    "safetyPlan": {
+                        "warningSignsAndTriggers": [
+                            "Increased isolation",
+                            "Sleep disruption for more than 3 days",
+                            "Increased negative thoughts",
+                            "Loss of interest in previously enjoyed activities"
+                        ],
+                        "copingStrategies": [
+                            "Deep breathing exercises",
+                            "Progressive muscle relaxation",
+                            "Grounding techniques (5-4-3-2-1 method)",
+                            "Mindfulness meditation"
+                        ],
+                        "distractionTechniques": [
+                            "Going for a walk",
+                            "Listening to favorite music",
+                            "Engaging in a hobby",
+                            "Calling a friend"
+                        ],
+                        "supportContacts": [
+                            {
+                                "name": "Jane Smith (Sister)",
+                                "phone": "555-123-4567"
+                            },
+                            {
+                                "name": "Michael Johnson (Friend)",
+                                "phone": "555-987-6543"
+                            }
+                        ],
+                        "professionalResources": [
+                            {
+                                "name": "Therapist: Dr. Taylor",
+                                "contact": "555-789-0123"
+                            },
+                            {
+                                "name": "Crisis Hotline",
+                                "contact": "1-800-273-8255"
+                            },
+                            {
+                                "name": "Local Emergency Room",
+                                "address": "123 Hospital Ave"
+                            }
+                        ],
+                        "removingAccessToMeans": "Medication is kept in a locked cabinet with key held by spouse",
+                        "reasonsForLiving": [
+                            "Family relationships",
+                            "Future travel plans",
+                            "Career goals",
+                            "Pets that depend on me"
+                        ],
+                        "approved": true
+                    },
+                    "treatmentGoals": [
+                        {
+                            "goal": "Reduce anxiety symptoms by 50%",
+                            "timeframe": "3 months",
+                            "interventions": [
+                                "Regular CBT sessions",
+                                "Daily mindfulness practice",
+                                "Medication compliance",
+                                "Regular exercise"
+                            ],
+                            "progress": "25% improvement noted after 1 month",
+                            "approved": true
+                        },
+                        {
+                            "goal": "Improve sleep quality",
+                            "timeframe": "6 weeks",
+                            "interventions": [
+                                "Sleep hygiene protocol",
+                                "Evening relaxation routine",
+                                "Limiting screen time"
+                            ],
+                            "progress": "Sleep duration increased by 1 hour on average",
+                            "approved": true
+                        }
+                    ],
+                    "followUp": {
+                        "nextAppointment": "2025-04-22",
+                        "frequency": "Bi-weekly",
+                        "labTests": [
+                            "Complete Blood Count",
+                            "Thyroid Function Test",
+                            "Vitamin D level"
+                        ],
+                        "medicationReview": "At next appointment"
+                    }
                 }
             }
         },

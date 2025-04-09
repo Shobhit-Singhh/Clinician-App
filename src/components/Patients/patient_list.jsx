@@ -4,9 +4,9 @@ import patientsData from '/data/patient.json';
 
 // Predefined tag categories
 const tagCategories = [
-    'Cardiology', 'Neurology', 'Pediatrics', 
-    'Oncology', 'Dermatology', 'High Risk', 
-    'Chronic Condition', 'Rare Condition'
+    'Personality Disorders' ,'Depression', 'Anxiety', 'Bipolar Disorder',
+    'Schizophrenia', 'PTSD', 'OCD',
+    'Eating Disorders', 'ADHD', 
 ];
 
 const PatientList = ({ onPatientSelect }) => {

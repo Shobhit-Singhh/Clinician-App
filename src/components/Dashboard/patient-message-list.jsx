@@ -66,37 +66,40 @@ const PatientMessageList = () => {
     <div className="bg-white rounded-2xl  border-gray-100 overflow-hidden max-w-md mx-auto">
       {/* Header */}
       <div className="bg-gradient-to-r p-4 border-b border-gray-200 flex items-center justify-between">
-        <div className="flex items-center space-x-3">
-          <MessageCircle size={28} className="text-blue-600" strokeWidth={2} />
-          <h2 className="text-2xl font-bold text-gray-800">Patient Messages</h2>
-        </div>
-        <button
-          onClick={() => setShowPinnedOnly(!showPinnedOnly)}
-          className={`transition-all duration-300 p-2 rounded-full ${showPinnedOnly
-            ? 'bg-blue-100 text-blue-600 shadow-md'
-            : 'hover:bg-blue-50 text-gray-500'
-            }`}
-          title={showPinnedOnly ? 'Show All Messages' : 'Show Pinned Messages'}
-        >
-          <Pin size={20} strokeWidth={2} />
-        </button>
+        <h2 className="text-xl font-bold text-gray-800 flex items-center mb-4">
+          <MessageCircle className="mr-2 text-blue-600" size={24} />
+          Patient Messages
+        </h2>
+
       </div>
 
       {/* Search and Filter */}
       <div className="p-4 space-y-3 border-b">
-        <div className="relative">
-          <Search
-            size={18}
-            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-            strokeWidth={2}
-          />
-          <input
-            type="text"
-            placeholder="Search patients..."
-            className="w-full pl-10 pr-4 py-2.5 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-200 focus:border-blue-300 transition-all duration-300"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+        <div className='flex items-center justify-between'>
+          <div className="relative">
+            <Search
+              size={18}
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+              strokeWidth={2}
+            />
+            <input
+              type="text"
+              placeholder="Search patients..."
+              className="w-full pl-10 pr-4 py-2.5 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-200 focus:border-blue-300 transition-all duration-300"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+          <button
+            onClick={() => setShowPinnedOnly(!showPinnedOnly)}
+            className={`transition-all duration-300 p-2 rounded-full ${showPinnedOnly
+              ? 'bg-blue-100 text-blue-600 shadow-md'
+              : 'hover:bg-blue-50 text-gray-500'
+              }`}
+            title={showPinnedOnly ? 'Show All Messages' : 'Show Pinned Messages'}
+          >
+            <Pin size={20} strokeWidth={2} />
+          </button>
         </div>
         <div className="relative">
           <select
@@ -131,21 +134,19 @@ const PatientMessageList = () => {
             >
 
               <div className="relative">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shadow-sm">
-                  <User size={24} className="text-blue-500" strokeWidth={2} />
-                </div>
-                {message.unreadCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full px-1.5 py-0.5 shadow-md">
-                    {message.unreadCount}
-                  </span>
-                )}
+
               </div>
 
               <div className="flex-grow">
-                <div className='flex items-center justify-between'>
-                  <h3 className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                <div className='flex items-center '>
+                  <h3 className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors pr-3">
                     {message.name}
                   </h3>
+                  {message.unreadCount > 0 && (
+                    <span className="bg-red-500 text-white text-xs rounded-full px-1.5 py-0.5 shadow-md">
+                      {message.unreadCount}
+                    </span>
+                  )}
                   <button
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent parent click event

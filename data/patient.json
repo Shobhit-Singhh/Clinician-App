@@ -5,7 +5,7 @@
             "name": "Emily Johnson",
             "image": "/assets/patient/patient_1.png",
             "tags": [
-                "Cardiology",
+                "Schizophrenia",
                 "High Risk"
             ],
             "pinned": false,
@@ -1175,7 +1175,7 @@
             "name": "Michael Carter",
             "image": "/assets/patient/patient_2.png",
             "tags": [
-                "Neurology",
+                "Depression",
                 "Chronic "
             ],
             "pinned": true,
@@ -1311,7 +1311,7 @@
             "name": "Sophia Martinez",
             "image": "/assets/patient/patient_3.png",
             "tags": [
-                "Endocrinology",
+                "Bipolar Disorder",
                 "High Risk"
             ],
             "pinned": false,
@@ -1447,7 +1447,7 @@
             "name": "David Thompson",
             "image": "/assets/patient/patient_4.png",
             "tags": [
-                "Pulmonology",
+                "Personality Disorders",
                 "Chronic "
             ],
             "pinned": true,
@@ -1604,7 +1604,7 @@
             "name": "Olivia Baker",
             "image": "/assets/patient/patient_5.png",
             "tags": [
-                "Oncology",
+                "PTSD",
                 "High Risk"
             ],
             "pinned": false,
